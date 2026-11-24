@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Ady's African Hair Braiding | Braids in Dorchester, Boston · Walk-ins 7 days</title>
+<meta name="description" content="Ady's African Hair Braiding, 1736 Dorchester Ave, Boston MA. Knotless, boho & goddess braids, Fulani, twists, feed-in ponytails, cornrows, men's and kids' braids. Rated 4.7 from 374 Google reviews. Walk-ins welcome 7 days, 9am–6pm. Book on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap">
+<style>
+/* Ady's — brand from THEIR salon: the green flower wall (artificial grass + white roses + yellow daisies) every finished
+   style is photographed against, warm wood-panelled salon, gold accents. Style: "the flower wall" — greenery frames,
+   botanical SVG vines, arch-framed photos, a style finder with Women / Men / Kids filters that pre-fills the booking.
+   Gilda Display + Be Vietnam Pro (never used on other demos). Light, single theme. US formats. */
+:root {
+  --grass: #2f6b2a; --grass-d: #1f4a1c; --leaf: #8cbf5a; --mint: #eef6e6; --bloom: #ffffff; --daisy: #f5c518;
+  --gold: #b8892f; --ink: #1d231b; --mute: #4f594b; --paper: #fbfaf5; --line: #dfe6d6; --wood: #b98a5a;
+  --serif: "Gilda Display", Georgia, serif; --sans: "Be Vietnam Pro", "Segoe UI", system-ui, sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+html, body { overflow-x: clip; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17.5px/1.7 var(--sans); }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--daisy); outline-offset: 3px; }
+.wrap { max-width: 1200px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; line-height: 1.05; letter-spacing: -.01em; }
+.g { color: var(--grass); font-style: italic; }
+.demo { background: var(--grass-d); color: #e3eed9; font-size: 13px; text-align: center; padding: 7px 12px; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; font: 600 16px/1 var(--sans); padding: 17px 26px; border-radius: 14px; background: var(--grass); color: #fff; text-decoration: none; border: 0; cursor: pointer; box-shadow: 0 6px 0 var(--grass-d); transition: transform .15s, box-shadow .15s; }
+.btn:hover { transform: translateY(2px); box-shadow: 0 4px 0 var(--grass-d); }
+.btn.light { background: #fff; color: var(--grass-d); box-shadow: 0 6px 0 #cfdcc4; }
+.btn svg { width: 20px; height: 20px; }
+
+header.top { position: sticky; top: 0; z-index: 40; background: rgba(251,250,245,.96); border-bottom: 1px solid var(--line); }
+header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding-block: 12px; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.brand svg { width: 44px; height: 44px; flex: none; }
+.brand b { display: block; font: 400 26px/1 var(--serif); }
+.brand small { display: block; font: 600 10.5px/1 var(--sans); letter-spacing: .2em; color: var(--grass); margin-top: 4px; text-transform: uppercase; }
+.top nav { display: flex; align-items: center; gap: 26px; font: 500 15.5px/1 var(--sans); }
+.top nav a:not(.btn) { text-decoration: none; }
+.top nav a:not(.btn):hover { color: var(--grass); }
+.top nav .btn { padding: 12px 18px; font-size: 15px; box-shadow: 0 4px 0 var(--grass-d); }
+.menu-btn { display: none; background: var(--mint); border: 1px solid var(--line); border-radius: 12px; padding: 11px 13px; font: 600 14px/1 var(--sans); color: var(--grass-d); cursor: pointer; align-items: center; gap: 8px; }
+.menu-btn i { display: grid; gap: 4px; } .menu-btn i b { display: block; width: 16px; height: 2px; background: var(--grass-d); border-radius: 2px; }
+.drop { display: none; position: fixed; left: 12px; right: 12px; z-index: 45; background: #fff; border-radius: 18px; box-shadow: 0 24px 50px rgba(29,35,27,.25); overflow: hidden; }
+.drop.open { display: block; }
+.drop a { display: block; padding: 16px 22px; font: 400 24px/1 var(--serif); text-decoration: none; border-top: 1px solid var(--line); }
+.drop a:first-child { border-top: 0; }
+.scrim { display: none; position: fixed; inset: 0; z-index: 35; background: rgba(29,35,27,.35); }
+.scrim.open { display: block; }
+
+/* hero: the flower wall */
+.hero { position: relative; background: linear-gradient(180deg, var(--grass) 0%, #3d7c34 100%); color: #fff; overflow: hidden; }
+.hero::before { content: ""; position: absolute; inset: 0; opacity: .35; background-image:
+  radial-gradient(circle at 20% 30%, rgba(255,255,255,.35) 0 2px, transparent 3px),
+  repeating-linear-gradient(80deg, rgba(0,0,0,.08) 0 2px, transparent 2px 5px); background-size: 46px 46px, auto; }
+.vines { position: absolute; inset: 0; pointer-events: none; }
+.hero .wrap { position: relative; display: grid; grid-template-columns: 1.05fr .95fr; gap: 50px; align-items: center; padding-block: 60px 80px; }
+.open-badge { display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.35); padding: 9px 14px; border-radius: 999px; font: 600 14.5px/1 var(--sans); }
+.open-badge i { width: 10px; height: 10px; border-radius: 50%; background: var(--daisy); box-shadow: 0 0 0 4px rgba(245,197,24,.3); }
+.hero h1 { font-size: clamp(50px, 6.4vw, 86px); margin: 18px 0 18px; }
+.hero h1 .g { color: #fff3b8; }
+.hero p { font-size: 19.5px; color: #e9f3e0; max-width: 46ch; margin: 0 0 30px; }
+.ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+.stars { display: flex; align-items: center; gap: 12px; margin-top: 30px; font: 600 15.5px/1.3 var(--sans); color: #f2f8ec; }
+.stars b { color: var(--daisy); letter-spacing: 2px; font-size: 18px; }
+.arch { position: relative; justify-self: center; width: min(440px, 100%); }
+.arch .frame { border-radius: 260px 260px 24px 24px; overflow: hidden; border: 10px solid #fff; box-shadow: 0 30px 60px rgba(0,0,0,.3); aspect-ratio: 3 / 4.1; background: #ddd; }
+.arch img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
+.arch .tag { position: absolute; left: -18px; bottom: 34px; background: #fff; color: var(--ink); padding: 12px 16px; border-radius: 14px; box-shadow: 0 14px 30px rgba(0,0,0,.22); font: 600 14.5px/1.3 var(--sans); }
+.arch .tag small { display: block; color: var(--mute); font-weight: 500; }
+.bloom { position: absolute; width: 74px; height: 74px; }
+.b1 { top: -22px; left: -16px; } .b2 { top: 44%; right: -26px; } .b3 { bottom: -18px; right: 40px; width: 56px; height: 56px; }
+
+/* trust strip */
+.strip { background: #fff; border-bottom: 1px solid var(--line); }
+.strip .wrap { display: grid; grid-template-columns: repeat(4, 1fr); }
+.strip div { padding: 22px 16px; text-align: center; border-left: 1px solid var(--line); }
+.strip div:first-child { border-left: 0; }
+.strip b { display: block; font: 400 28px/1.1 var(--serif); color: var(--grass-d); }
+.strip span { font-size: 14.5px; color: var(--mute); }
+
+section { padding-block: 90px; }
+.sh { text-align: center; max-width: 720px; margin: 0 auto 40px; }
+.sh .kick { font: 600 13px/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--grass); }
+.sh h2 { font-size: clamp(40px, 5vw, 62px); margin-top: 12px; }
+.sh p { color: var(--mute); font-size: 18.5px; margin: 14px auto 0; }
+
+/* style finder */
+.filters { display: flex; justify-content: center; gap: 10px; margin-bottom: 30px; flex-wrap: wrap; }
+.filters button { font: 600 15px/1 var(--sans); padding: 12px 20px; border-radius: 999px; border: 1.5px solid var(--line); background: #fff; color: var(--ink); cursor: pointer; }
+.filters button[aria-pressed="true"] { background: var(--grass); color: #fff; border-color: var(--grass); }
+.styles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+.style { background: #fff; border-radius: 22px; overflow: hidden; border: 1px solid var(--line); display: flex; flex-direction: column; transition: transform .25s, box-shadow .25s; min-width: 0; }
+.style:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(29,35,27,.12); }
+.style .ph { aspect-ratio: 4 / 5; overflow: hidden; background: var(--mint); }
+.style .ph img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; }
+.style .bd { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+.style h3 { font-size: 24px; }
+.style p { margin: 0; font-size: 15px; color: var(--mute); line-height: 1.5; }
+.style .who { font: 600 12px/1 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--gold); }
+.style button { margin-top: auto; align-self: flex-start; font: 600 14.5px/1 var(--sans); padding: 11px 14px; border-radius: 10px; border: 0; background: var(--mint); color: var(--grass-d); cursor: pointer; }
+.style button:hover { background: #dcecc9; }
+.style[hidden] { display: none; }
+
+/* walk-in band */
+.walkin { background: var(--mint); }
+.walkin .wrap { display: grid; grid-template-columns: .9fr 1.1fr; gap: 50px; align-items: center; }
+.walkin h2 { font-size: clamp(38px, 4.6vw, 56px); }
+.walkin p { color: var(--mute); font-size: 18px; }
+.hours { background: #fff; border-radius: 22px; padding: 26px 28px; border: 1px solid var(--line); }
+.hours div { display: flex; justify-content: space-between; padding: 11px 0; border-bottom: 1px dashed var(--line); font-weight: 500; }
+.hours div:last-child { border-bottom: 0; }
+.hours div.today { color: var(--grass-d); font-weight: 700; }
+.hours .note { margin-top: 12px; font-size: 14.5px; color: var(--mute); }
+
+/* booking */
+.book .wrap { display: grid; grid-template-columns: .85fr 1.15fr; gap: 46px; align-items: start; }
+.book h2 { font-size: clamp(40px, 5vw, 60px); }
+.book .steps { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 14px; }
+.book .steps li { display: grid; grid-template-columns: 44px 1fr; gap: 12px; align-items: start; }
+.book .steps b { width: 44px; height: 44px; border-radius: 50%; background: var(--mint); color: var(--grass-d); display: grid; place-items: center; font: 400 22px/1 var(--serif); }
+.book .steps span { color: var(--mute); padding-top: 10px; }
+form.card { background: #fff; border: 1px solid var(--line); border-radius: 26px; padding: 30px; box-shadow: 0 24px 50px rgba(29,35,27,.08); }
+form.card h3 { font-size: 30px; margin-bottom: 18px; }
+.f { display: grid; gap: 7px; font: 600 13.5px/1 var(--sans); color: var(--mute); margin-bottom: 16px; }
+.f input, .f select { font: 400 17px/1.4 var(--sans); padding: 13px 14px; border: 1.5px solid #d3dccb; border-radius: 12px; background: var(--paper); color: var(--ink); width: 100%; }
+.f input:focus, .f select:focus { outline: 2px solid var(--grass); border-color: var(--grass); }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chips label { position: relative; }
+.chips input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
+.chips span { display: inline-block; padding: 10px 14px; border-radius: 999px; border: 1.5px solid #d3dccb; font: 500 15px/1 var(--sans); background: var(--paper); }
+.chips input:checked + span { background: var(--grass); border-color: var(--grass); color: #fff; }
+.chips input:focus-visible + span { outline: 3px solid var(--daisy); outline-offset: 2px; }
+.fineprint { font-size: 13.5px; color: var(--mute); margin-top: 12px; }
+
+/* reviews */
+.reviews { background: linear-gradient(180deg, var(--grass-d), var(--grass)); color: #fff; }
+.reviews .sh .kick { color: var(--daisy); } .reviews .sh p { color: #dbe9d0; }
+.rgrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.rv-card { margin: 0; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2); border-radius: 22px; padding: 26px; }
+.rv-card .st { color: var(--daisy); letter-spacing: 3px; }
+.rv-card p { font: 400 22px/1.4 var(--serif); margin: 10px 0 12px; }
+.rv-card cite { font-style: normal; font-size: 14px; color: #cfe2c3; }
+
+/* gallery */
+.gal { columns: 4 220px; column-gap: 14px; }
+.gal img { width: 100%; border-radius: 18px; margin-bottom: 14px; break-inside: avoid; }
+
+/* visit */
+.visit .wrap { display: grid; grid-template-columns: 1fr 1.1fr; gap: 40px; align-items: center; }
+.visit h2 { font-size: clamp(38px, 4.6vw, 56px); margin: 12px 0 16px; }
+.visit p { color: var(--mute); }
+.map { border-radius: 26px; overflow: hidden; border: 8px solid #fff; box-shadow: 0 20px 40px rgba(29,35,27,.12); aspect-ratio: 4 / 3; background: var(--mint); }
+.map iframe { width: 100%; height: 100%; border: 0; display: block; }
+footer { background: var(--grass-d); color: #d8e6ce; padding-block: 40px 110px; text-align: center; font-size: 15.5px; }
+footer b { display: block; font: 400 30px/1 var(--serif); color: #fff; margin-bottom: 10px; }
+.dock { position: fixed; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom, 0px)); z-index: 30; display: none; gap: 8px; }
+.dock a { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; font: 600 16px/1 var(--sans); padding: 16px 10px; border-radius: 14px; box-shadow: 0 10px 24px rgba(29,35,27,.3); }
+.dock .call { flex: 0 0 30%; background: #fff; color: var(--grass-d); }
+.dock .bk { background: var(--grass); color: #fff; }
+.rv { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+.rv.in { opacity: 1; transform: none; }
+
+@media (max-width: 1000px) {
+  .top nav { display: none; } .menu-btn { display: inline-flex; }
+  .hero .wrap, .walkin .wrap, .book .wrap, .visit .wrap { grid-template-columns: 1fr; }
+  .styles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .rgrid { grid-template-columns: 1fr; }
+  .strip .wrap { grid-template-columns: 1fr 1fr; }
+  .strip div:nth-child(3) { border-left: 0; } .strip div:nth-child(n+3) { border-top: 1px solid var(--line); }
+}
+@media (max-width: 640px) {
+  section { padding-block: 64px; }
+  .hero .wrap { padding-block: 40px 60px; gap: 44px; }
+  .hero h1 { font-size: 46px; }
+  .hero p { font-size: 18px; }
+  .ctas .btn { flex: 1 1 100%; }
+  .arch { width: min(330px, 86%); }
+  .arch .tag { left: -8px; }
+  .styles { gap: 10px; }
+  .style h3 { font-size: 20px; } .style p { display: none; } .style .bd { padding: 12px 12px 14px; }
+  .row2 { grid-template-columns: 1fr; gap: 0; }
+  form.card { padding: 22px 18px; }
+  .gal { columns: 2; column-gap: 10px; } .gal img { margin-bottom: 10px; }
+  .dock { display: flex; }
+  .brand b { font-size: 22px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } .rv { opacity: 1; transform: none; } html { scroll-behavior: auto; } }
+</style>
+<style>body{margin:0}</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="rose" viewBox="0 0 60 60"><g fill="#fff"><circle cx="30" cy="30" r="13"/><circle cx="18" cy="24" r="10"/><circle cx="42" cy="24" r="10"/><circle cx="20" cy="40" r="10"/><circle cx="40" cy="40" r="10"/></g><circle cx="30" cy="30" r="6" fill="#f3efe2"/><path d="M27 30a3 3 0 106 0" stroke="#d9d2bd" stroke-width="1.4" fill="none"/></symbol>
+  <symbol id="daisy" viewBox="0 0 60 60"><g fill="#f5c518">
+    <ellipse cx="30" cy="12" rx="6" ry="11"/><ellipse cx="30" cy="48" rx="6" ry="11"/><ellipse cx="12" cy="30" rx="11" ry="6"/><ellipse cx="48" cy="30" rx="11" ry="6"/>
+    <ellipse cx="17" cy="17" rx="6" ry="11" transform="rotate(-45 17 17)"/><ellipse cx="43" cy="43" rx="6" ry="11" transform="rotate(-45 43 43)"/>
+    <ellipse cx="43" cy="17" rx="6" ry="11" transform="rotate(45 43 17)"/><ellipse cx="17" cy="43" rx="6" ry="11" transform="rotate(45 17 43)"/></g>
+    <circle cx="30" cy="30" r="8" fill="#b8892f"/></symbol>
+  <symbol id="logo" viewBox="0 0 48 48"><circle cx="24" cy="24" r="23" fill="#2f6b2a"/><path d="M15 34c4-14 14-14 18 0M19 30h10" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round"/><path d="M24 9c-3 4-3 8 0 11 3-3 3-7 0-11z" fill="#8cbf5a"/><circle cx="34" cy="14" r="3" fill="#f5c518"/></symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.2-.4.2-.4.7-1.3a.5.5 0 000-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.1 5.1 0 001.1 2.7 11.7 11.7 0 004.5 4c1.7.7 2.3.7 3.1.6a2.7 2.7 0 001.8-1.3 2.2 2.2 0 00.2-1.3c-.1-.1-.3-.2-.5-.3z"/></symbol>
+</defs></svg>
+
+<div class="demo">Demo website made for Ady's African Hair Braiding. Styles and prices to be confirmed by you.</div>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top" aria-label="Ady's African Hair Braiding home"><svg aria-hidden="true"><use href="#logo"/></svg><span><b>Ady's</b><small>African Hair Braiding</small></span></a>
+  <nav aria-label="Primary"><a href="#styles">Styles</a><a href="#walkin">Walk-ins</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a><a class="btn" href="#book">Book now</a></nav>
+  <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="drop"><i><b></b><b></b><b></b></i>Menu</button>
+</div></header>
+<div class="scrim" id="scrim"></div>
+<nav class="drop" id="drop" aria-label="Menu"><a href="#styles">Styles</a><a href="#book">Book now</a><a href="#walkin">Walk-ins &amp; hours</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#visit">Visit us</a></nav>
+
+<div class="hero" id="top">
+  <svg class="vines" viewBox="0 0 1440 700" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 80 C 200 40, 320 140, 520 90 S 900 30, 1100 100 S 1340 60, 1440 90" fill="none" stroke="#8cbf5a" stroke-width="3" opacity=".5"/>
+    <path d="M0 640 C 260 600, 420 690, 700 640 S 1180 600, 1440 650" fill="none" stroke="#8cbf5a" stroke-width="3" opacity=".45"/>
+  </svg>
+  <div class="wrap">
+    <div>
+      <span class="open-badge rv" id="openBadge"><i></i><span id="openText">Walk-ins welcome · 9 AM – 6 PM, 7 days</span></span>
+      <h1 class="rv">Braids that turn <span class="g">heads</span> in Dorchester.</h1>
+      <p class="rv">Knotless, boho goddess, Fulani, twists, feed-ins and cornrows, for women, men and kids. Neat, quick hands and a salon that treats you like family.</p>
+      <div class="ctas rv"><a class="btn" href="#book"><svg aria-hidden="true"><use href="#wa"/></svg>Book on WhatsApp</a><a class="btn light" href="#styles">See the styles</a></div>
+      <div class="stars rv"><b>★★★★★</b><span>4.7 from 374 Google reviews</span></div>
+    </div>
+    <div class="arch rv">
+      <svg class="bloom b1" aria-hidden="true"><use href="#rose"/></svg>
+      <svg class="bloom b2" aria-hidden="true"><use href="#daisy"/></svg>
+      <svg class="bloom b3" aria-hidden="true"><use href="#rose"/></svg>
+      <div class="frame"><img src="img/hero.webp" alt="Long boho knotless braids photographed against the salon's green flower wall" width="640" height="852"></div>
+      <div class="tag">Boho knotless braids<small>Finished at Ady's flower wall</small></div>
+    </div>
+  </div>
+</div>
+
+<div class="strip"><div class="wrap">
+  <div><b>4.7 ★</b><span>374 Google reviews</span></div>
+  <div><b>7 days</b><span>Open Monday – Sunday</span></div>
+  <div><b>Walk-ins</b><span>Welcome 9 AM – 6 PM</span></div>
+  <div><b>All ages</b><span>Women, men &amp; kids</span></div>
+</div></div>
+
+<section id="styles"><div class="wrap">
+  <div class="sh rv"><span class="kick">The style menu</span><h2>Find your <span class="g">next look.</span></h2><p>Tap a style to start your booking. Every photo here was braided at Ady's.</p></div>
+  <div class="filters rv" role="group" aria-label="Filter styles">
+    <button type="button" data-f="all" aria-pressed="true">All styles</button><button type="button" data-f="women" aria-pressed="false">Women</button><button type="button" data-f="men" aria-pressed="false">Men</button><button type="button" data-f="kids" aria-pressed="false">Kids</button>
+  </div>
+  <div class="styles" id="styleGrid">
+    <article class="style rv" data-who="women"><div class="ph"><img src="img/knotless.webp" alt="Long black knotless braids" loading="lazy"></div><div class="bd"><span class="who">Women</span><h3>Knotless braids</h3><p>Light, natural-looking and gentle on your edges.</p><button type="button" data-style="Knotless braids">Book this</button></div></article>
+    <article class="style rv" data-who="women"><div class="ph"><img src="img/boho.webp" alt="Boho goddess braids with curly ends" loading="lazy"></div><div class="bd"><span class="who">Women</span><h3>Boho &amp; goddess</h3><p>Braids with soft curly pieces for an effortless look.</p><button type="button" data-style="Boho / goddess braids">Book this</button></div></article>
+    <article class="style rv" data-who="women"><div class="ph"><img src="img/fulani.webp" alt="Fulani-style braids with cornrows and loose curls" loading="lazy"></div><div class="bd"><span class="who">Women</span><h3>Fulani &amp; tribal</h3><p>Cornrow patterns up front with flowing braids behind.</p><button type="button" data-style="Fulani / tribal braids">Book this</button></div></article>
+    <article class="style rv" data-who="women"><div class="ph"><img src="img/twists.webp" alt="Spring twists at shoulder length" loading="lazy"></div><div class="bd"><span class="who">Women</span><h3>Twists</h3><p>Spring, passion and Senegalese twists.</p><button type="button" data-style="Twists">Book this</button></div></article>
+    <article class="style rv" data-who="women"><div class="ph"><img src="img/ponytail.webp" alt="Feed-in braids swept into a high ponytail" loading="lazy"></div><div class="bd"><span class="who">Women</span><h3>Feed-in ponytail</h3><p>Sleek feed-in cornrows into a long braided ponytail.</p><button type="button" data-style="Feed-in ponytail">Book this</button></div></article>
+    <article class="style rv" data-who="women"><div class="ph"><img src="img/blonde.webp" alt="Honey blonde goddess braids with curls" loading="lazy"></div><div class="bd"><span class="who">Women</span><h3>Colour braids</h3><p>Honey blonde, burgundy and custom colour blends.</p><button type="button" data-style="Colour braids">Book this</button></div></article>
+    <article class="style rv" data-who="men"><div class="ph"><img src="img/mens.webp" alt="Men's cornrows with clean parts" loading="lazy"></div><div class="bd"><span class="who">Men</span><h3>Cornrows &amp; stitch</h3><p>Clean parts, stitch braids and freestyle designs.</p><button type="button" data-style="Men's cornrows / stitch braids">Book this</button></div></article>
+    <article class="style rv" data-who="kids"><div class="ph"><img src="img/kids2.webp" alt="Child's braids with colourful beads" loading="lazy"></div><div class="bd"><span class="who">Kids</span><h3>Kids' braids</h3><p>Gentle hands, cute beads and styles that last.</p><button type="button" data-style="Kids' braids">Book this</button></div></article>
+  </div>
+</div></section>
+
+<section class="walkin" id="walkin"><div class="wrap">
+  <div class="rv">
+    <div class="sh" style="text-align:left;margin:0 0 10px"><span class="kick">No appointment?</span></div>
+    <h2>Walk in. <span class="g">Walk out braided.</span></h2>
+    <p>We take walk-ins every day of the week. For long styles or a set time, book ahead on WhatsApp so your braider is ready for you.</p>
+    <a class="btn" href="#book" style="margin-top:10px"><svg aria-hidden="true"><use href="#wa"/></svg>Reserve a time</a>
+  </div>
+  <div class="hours rv" id="hours" aria-label="Opening hours">
+    <div data-d="1"><span>Monday</span><span>9 AM – 6 PM</span></div>
+    <div data-d="2"><span>Tuesday</span><span>9 AM – 6 PM</span></div>
+    <div data-d="3"><span>Wednesday</span><span>9 AM – 6 PM</span></div>
+    <div data-d="4"><span>Thursday</span><span>9 AM – 6 PM</span></div>
+    <div data-d="5"><span>Friday</span><span>9 AM – 6 PM</span></div>
+    <div data-d="6"><span>Saturday</span><span>9 AM – 6 PM</span></div>
+    <div data-d="0"><span>Sunday</span><span>9 AM – 6 PM</span></div>
+    <p class="note">Walk-in hours. Call (617) 938-9917 to check how busy we are today.</p>
+  </div>
+</div></section>
+
+<section class="book" id="book"><div class="wrap">
+  <div class="rv">
+    <div class="sh" style="text-align:left;margin:0 0 10px"><span class="kick">Book your braids</span></div>
+    <h2>Pick a style, <span class="g">pick a time.</span></h2>
+    <ul class="steps">
+      <li><b>1</b><span>Choose your style, length and size.</span></li>
+      <li><b>2</b><span>Pick a day and time that works for you.</span></li>
+      <li><b>3</b><span>Send it on WhatsApp. We confirm your spot and price.</span></li>
+    </ul>
+  </div>
+  <form class="card rv" id="form">
+    <h3>Booking request</h3>
+    <label class="f">Style<select name="style" id="styleSel">
+      <option>Knotless braids</option><option>Boho / goddess braids</option><option>Fulani / tribal braids</option><option>Twists</option><option>Feed-in ponytail</option><option>Colour braids</option><option>Men's cornrows / stitch braids</option><option>Kids' braids</option><option>Wash &amp; blow-dry</option><option>Not sure, need advice</option></select></label>
+    <div class="f">Length<div class="chips" role="group" aria-label="Length">
+      <label><input type="radio" name="len" value="Shoulder" checked><span>Shoulder</span></label>
+      <label><input type="radio" name="len" value="Mid-back"><span>Mid-back</span></label>
+      <label><input type="radio" name="len" value="Waist"><span>Waist</span></label>
+      <label><input type="radio" name="len" value="Extra long"><span>Extra long</span></label></div></div>
+    <div class="f">Size<div class="chips" role="group" aria-label="Size">
+      <label><input type="radio" name="size" value="Small"><span>Small</span></label>
+      <label><input type="radio" name="size" value="Medium" checked><span>Medium</span></label>
+      <label><input type="radio" name="size" value="Large"><span>Large</span></label></div></div>
+    <div class="row2">
+      <label class="f">Date<input type="date" name="date" required></label>
+      <label class="f">Time<select name="time"><option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option></select></label>
+    </div>
+    <label class="f">Your name<input name="name" autocomplete="name" required></label>
+    <button class="btn" type="submit" style="width:100%"><svg aria-hidden="true"><use href="#wa"/></svg>Send booking on WhatsApp</button>
+    <p class="fineprint">Prices depend on style, length and size; we confirm yours before your appointment.</p>
+  </form>
+</div></section>
+
+<section class="reviews" id="reviews"><div class="wrap">
+  <div class="sh rv"><span class="kick">What clients say</span><h2>4.7 stars from <span class="g" style="color:#fff3b8">374 reviews.</span></h2><p>New five-star reviews every week on Google.</p></div>
+  <div class="rgrid">
+    <figure class="rv-card rv"><div class="st">★★★★★</div><p>"Every time I come here I leave happy. They always do a great job."</p><cite>Google review · third visit</cite></figure>
+    <figure class="rv-card rv"><div class="st">★★★★★</div><p>"Rita was so kind and is extremely talented and quick with her braiding."</p><cite>Google review · stitch braids</cite></figure>
+    <figure class="rv-card rv"><div class="st">★★★★★</div><p>"My daughter loves her hair, the style was so pretty. I will definitely be back."</p><cite>Google review · kids' braids</cite></figure>
+  </div>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+  <div class="sh rv"><span class="kick">Fresh from the flower wall</span><h2>Recent <span class="g">work.</span></h2></div>
+  <div class="gal rv">
+    <img src="img/flowerwall.webp" alt="Copper boho braids at the flower wall" loading="lazy">
+    <img src="img/red.webp" alt="Burgundy goddess braids with curly ends" loading="lazy">
+    <img src="img/goddess.webp" alt="Long black goddess braids, back view" loading="lazy">
+    <img src="img/side.webp" alt="Knotless braids with silver strands, side view" loading="lazy">
+    <img src="img/mens2.webp" alt="Men's cornrows, side view" loading="lazy">
+    <img src="img/bob.webp" alt="Bob-length braids with curly ends" loading="lazy">
+    <img src="img/crochet.webp" alt="Crochet curls over cornrows" loading="lazy">
+    <img src="img/kids.webp" alt="Child's cornrows with beads" loading="lazy">
+  </div>
+</div></section>
+
+<section class="visit" id="visit" style="padding-top:0"><div class="wrap">
+  <div class="rv">
+    <div class="sh" style="text-align:left;margin:0"><span class="kick">Visit the salon</span></div>
+    <h2>1736 Dorchester Ave, <span class="g">Boston.</span></h2>
+    <p>Dorchester Center, MA 02124. Open 7 days, 9 AM – 6 PM. Walk-ins welcome.</p>
+    <div class="ctas" style="margin-top:22px"><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=1736%20Dorchester%20Ave%2C%20Dorchester%20Center%2C%20MA%2002124" target="_blank" rel="noopener">Get directions</a><a class="btn light" href="tel:+16179389917">Call (617) 938-9917</a></div>
+  </div>
+  <div class="map rv"><iframe title="Map: Ady's African Hair Braiding, 1736 Dorchester Ave" src="https://www.google.com/maps?q=1736+Dorchester+Ave,+Dorchester+Center,+MA+02124&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+</div></section>
+
+<footer><b>Ady's African Hair Braiding</b>1736 Dorchester Ave, Dorchester Center, MA 02124 · <a href="tel:+16179389917" style="color:#fff">(617) 938-9917</a> · <a href="https://www.instagram.com/adys_african_hair_braiding/" target="_blank" rel="noopener" style="color:#fff">@adys_african_hair_braiding</a></footer>
+<div class="dock"><a class="call" href="tel:+16179389917">Call</a><a class="bk" href="#book"><svg width="20" height="20" aria-hidden="true"><use href="#wa"/></svg>Book on WhatsApp</a></div>
+
+<script>
+(() => {
+  const WA = '16179389917';
+  const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .06 }) : null;
+  document.querySelectorAll('.rv').forEach(el => io ? io.observe(el) : el.classList.add('in'));
+  // menu
+  const btn = document.getElementById('menuBtn'), drop = document.getElementById('drop'), scrim = document.getElementById('scrim'), head = document.querySelector('header.top');
+  const close = () => { drop.classList.remove('open'); scrim.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); };
+  btn.onclick = () => { const o = !drop.classList.contains('open'); drop.style.top = (head.getBoundingClientRect().bottom + 8) + 'px'; drop.classList.toggle('open', o); scrim.classList.toggle('open', o); btn.setAttribute('aria-expanded', o); };
+  scrim.onclick = close; drop.querySelectorAll('a').forEach(a => a.onclick = close);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+  // open now (Boston time)
+  const bos = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }));
+  const h = bos.getHours() + bos.getMinutes() / 60, open = h >= 9 && h < 18;
+  document.getElementById('openText').textContent = open ? 'Open now · walk-ins welcome until 6 PM' : 'Closed now · opens 9 AM · walk-ins welcome';
+  const today = document.querySelector(`#hours [data-d="${bos.getDay()}"]`); if (today) today.classList.add('today');
+  // style filters
+  const cards = [...document.querySelectorAll('.style')];
+  document.querySelectorAll('.filters button').forEach(b => b.onclick = () => {
+    document.querySelectorAll('.filters button').forEach(x => x.setAttribute('aria-pressed', x === b));
+    cards.forEach(c => c.hidden = !(b.dataset.f === 'all' || c.dataset.who === b.dataset.f));
+  });
+  // "Book this" pre-fills the form
+  const sel = document.getElementById('styleSel');
+  document.querySelectorAll('[data-style]').forEach(b => b.onclick = () => { sel.value = b.dataset.style; document.getElementById('book').scrollIntoView({ behavior: 'smooth' }); });
+  // booking -> WhatsApp
+  const f = document.getElementById('form');
+  f.date.min = bos.toISOString().slice(0, 10);
+  f.addEventListener('submit', e => {
+    e.preventDefault();
+    const d = new Date(f.date.value + 'T00:00').toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+    const m = "Hi Ady's! I'd like to book an appointment.\n\nStyle: " + f.style.value + '\nLength: ' + f.len.value + '\nSize: ' + f.size.value + '\nDate: ' + d + '\nTime: ' + f.time.value + '\nName: ' + f.name.value + '\n\nPlease confirm the price and if this time is available. Thank you!';
+    window.open('https://wa.me/' + WA + '?text=' + encodeURIComponent(m), '_blank', 'noopener');
+  });
+})();
+</script>
+
+<!-- jb-credit -->
+<div class="jb-credit" style="all:revert;display:block;margin:0;padding:14px 16px calc(14px + env(safe-area-inset-bottom,0px));background:#111;color:#cfcfcf;font:500 13px/1.5 system-ui,-apple-system,Segoe UI,Arial,sans-serif;text-align:center;position:relative;z-index:1">Website designed by <b style="color:#fff">Joseph Bortey</b> · <a href="tel:+233265768743" style="color:#fff;text-decoration:underline">026 576 8743</a></div>
+<style>@media (max-width:760px){.jb-credit{padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))!important}}</style>
+<img src="https://hits.sh/josephbortey2003-droid.github.io/adysbraiding-demo.svg" alt="" width="1" height="1" style="position:absolute;width:1px;height:1px;opacity:0;pointer-events:none" referrerpolicy="no-referrer" loading="eager">
+</body>
+</html>
