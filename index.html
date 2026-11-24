@@ -5,193 +5,227 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <title>Ady's African Hair Braiding | Braids in Dorchester, Boston · Walk-ins 7 days</title>
-<meta name="description" content="Ady's African Hair Braiding, 1736 Dorchester Ave, Boston MA. Knotless, boho & goddess braids, Fulani, twists, feed-in ponytails, cornrows, men's and kids' braids. Rated 4.7 from 374 Google reviews. Walk-ins welcome 7 days, 9am–6pm. Book on WhatsApp.">
+<meta name="description" content="Ady's African Hair Braiding, 1736 Dorchester Ave, Boston MA. Knotless and box braids, boho, Fulani, cornrows and feed-ins, twists, colour, men's and kids' braids. 4.7 stars from 374 Google reviews. Walk-ins 7 days, 9am to 6pm. Browse 80+ real styles and book on WhatsApp.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap">
 <style>
-/* Ady's — brand from THEIR salon: the green flower wall (artificial grass + white roses + yellow daisies) every finished
-   style is photographed against, warm wood-panelled salon, gold accents. Style: "the flower wall" — greenery frames,
-   botanical SVG vines, arch-framed photos, a style finder with Women / Men / Kids filters that pre-fills the booking.
-   Gilda Display + Be Vietnam Pro (never used on other demos). Light, single theme. US formats. */
+/* Ady's: brand taken from THEIR shop flyer (bright lime-green field, bold rounded yellow "Ady's" with a dark outline,
+   dark charcoal-green text) + the green flower wall every finished style is photographed against.
+   Structure: a real lookbook of 82 of their own photos (filter by style family, tap to enlarge, "add to my booking"),
+   and a booking request built around references, not a style dropdown: pick photos, attach your own, describe it,
+   or ask for help choosing. Fredoka + Be Vietnam Pro. US formats. */
 :root {
-  --grass: #2f6b2a; --grass-d: #1f4a1c; --leaf: #8cbf5a; --mint: #eef6e6; --bloom: #ffffff; --daisy: #f5c518;
-  --gold: #b8892f; --ink: #1d231b; --mute: #4f594b; --paper: #fbfaf5; --line: #dfe6d6; --wood: #b98a5a;
-  --serif: "Gilda Display", Georgia, serif; --sans: "Be Vietnam Pro", "Segoe UI", system-ui, sans-serif;
+  --lime: #6cc62f; --lime-b: #95dd3d; --lime-d: #3c8a19; --lime-l: #f0fae6; --sun: #ffd51f; --sun-d: #e9a114;
+  --ink: #17240f; --mute: #4b5843; --paper: #fbfdf7; --line: #dfe9d3;
+  --round: "Fredoka", "Be Vietnam Pro", system-ui, sans-serif; --sans: "Be Vietnam Pro", "Segoe UI", system-ui, sans-serif;
   color-scheme: light;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 html, body { overflow-x: clip; }
-body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17.5px/1.7 var(--sans); }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.65 var(--sans); }
 img { display: block; max-width: 100%; height: auto; }
 a { color: inherit; }
-:focus-visible { outline: 3px solid var(--daisy); outline-offset: 3px; }
-.wrap { max-width: 1200px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
-h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; line-height: 1.05; letter-spacing: -.01em; }
-.g { color: var(--grass); font-style: italic; }
-.demo { background: var(--grass-d); color: #e3eed9; font-size: 13px; text-align: center; padding: 7px 12px; }
+:focus-visible { outline: 3px solid var(--sun-d); outline-offset: 3px; }
+section[id], div[id] { scroll-margin-top: 76px; }
+.wrap { max-width: 1200px; margin: 0 auto; padding-left: max(18px, env(safe-area-inset-left, 0px)); padding-right: max(18px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { font-family: var(--round); font-weight: 700; margin: 0; line-height: 1.05; letter-spacing: -.01em; }
+.demo { background: var(--ink); color: #dfe9d3; font-size: 13px; text-align: center; padding: 7px 12px; }
+.yl { color: var(--sun); -webkit-text-stroke: 2px var(--ink); paint-order: stroke fill; }
 
-.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; font: 600 16px/1 var(--sans); padding: 17px 26px; border-radius: 14px; background: var(--grass); color: #fff; text-decoration: none; border: 0; cursor: pointer; box-shadow: 0 6px 0 var(--grass-d); transition: transform .15s, box-shadow .15s; }
-.btn:hover { transform: translateY(2px); box-shadow: 0 4px 0 var(--grass-d); }
-.btn.light { background: #fff; color: var(--grass-d); box-shadow: 0 6px 0 #cfdcc4; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; font: 600 16px/1 var(--round); padding: 16px 24px; border-radius: 999px; background: var(--ink); color: #fff; text-decoration: none; border: 0; cursor: pointer; transition: transform .15s, background .15s; }
+.btn:hover { transform: translateY(-2px); }
+.btn.sun { background: var(--sun); color: var(--ink); }
+.btn.white { background: #fff; color: var(--ink); }
+.btn.ghost { background: transparent; color: var(--ink); border: 2px solid var(--ink); }
 .btn svg { width: 20px; height: 20px; }
 
-header.top { position: sticky; top: 0; z-index: 40; background: rgba(251,250,245,.96); border-bottom: 1px solid var(--line); }
-header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding-block: 12px; }
-.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-.brand svg { width: 44px; height: 44px; flex: none; }
-.brand b { display: block; font: 400 26px/1 var(--serif); }
-.brand small { display: block; font: 600 10.5px/1 var(--sans); letter-spacing: .2em; color: var(--grass); margin-top: 4px; text-transform: uppercase; }
-.top nav { display: flex; align-items: center; gap: 26px; font: 500 15.5px/1 var(--sans); }
+header.top { position: sticky; top: 0; z-index: 40; background: rgba(251,253,247,.97); border-bottom: 1px solid var(--line); }
+header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding-block: 10px; }
+.brand { display: flex; align-items: center; gap: 11px; text-decoration: none; }
+.brand .badge { width: 46px; height: 46px; border-radius: 14px; background: linear-gradient(135deg, var(--lime), var(--lime-b)); display: grid; place-items: center; font: 700 17px/1 var(--round); flex: none; }
+.brand b { display: block; font: 700 22px/1 var(--round); }
+.brand small { display: block; font: 600 11px/1 var(--sans); letter-spacing: .14em; color: var(--lime-d); margin-top: 4px; text-transform: uppercase; }
+.top nav { display: flex; align-items: center; gap: 24px; font: 500 15.5px/1 var(--sans); }
 .top nav a:not(.btn) { text-decoration: none; }
-.top nav a:not(.btn):hover { color: var(--grass); }
-.top nav .btn { padding: 12px 18px; font-size: 15px; box-shadow: 0 4px 0 var(--grass-d); }
-.menu-btn { display: none; background: var(--mint); border: 1px solid var(--line); border-radius: 12px; padding: 11px 13px; font: 600 14px/1 var(--sans); color: var(--grass-d); cursor: pointer; align-items: center; gap: 8px; }
-.menu-btn i { display: grid; gap: 4px; } .menu-btn i b { display: block; width: 16px; height: 2px; background: var(--grass-d); border-radius: 2px; }
-.drop { display: none; position: fixed; left: 12px; right: 12px; z-index: 45; background: #fff; border-radius: 18px; box-shadow: 0 24px 50px rgba(29,35,27,.25); overflow: hidden; }
+.top nav a:not(.btn):hover { color: var(--lime-d); }
+.top nav .btn { padding: 12px 18px; font-size: 15px; }
+.menu-btn { display: none; background: var(--lime-l); border: 1px solid var(--line); border-radius: 12px; padding: 11px 13px; font: 600 14px/1 var(--sans); color: var(--ink); cursor: pointer; align-items: center; gap: 8px; }
+.menu-btn i { display: grid; gap: 4px; } .menu-btn i b { display: block; width: 16px; height: 2px; background: var(--ink); border-radius: 2px; }
+.drop { display: none; position: fixed; left: 12px; right: 12px; z-index: 45; background: #fff; border-radius: 18px; box-shadow: 0 24px 50px rgba(23,36,15,.25); overflow: hidden; }
 .drop.open { display: block; }
-.drop a { display: block; padding: 16px 22px; font: 400 24px/1 var(--serif); text-decoration: none; border-top: 1px solid var(--line); }
+.drop a { display: block; padding: 16px 22px; font: 600 21px/1 var(--round); text-decoration: none; border-top: 1px solid var(--line); }
 .drop a:first-child { border-top: 0; }
-.scrim { display: none; position: fixed; inset: 0; z-index: 35; background: rgba(29,35,27,.35); }
+.scrim { display: none; position: fixed; inset: 0; z-index: 35; background: rgba(23,36,15,.35); }
 .scrim.open { display: block; }
 
-/* hero: the flower wall */
-.hero { position: relative; background: linear-gradient(180deg, var(--grass) 0%, #3d7c34 100%); color: #fff; overflow: hidden; }
-.hero::before { content: ""; position: absolute; inset: 0; opacity: .35; background-image:
-  radial-gradient(circle at 20% 30%, rgba(255,255,255,.35) 0 2px, transparent 3px),
-  repeating-linear-gradient(80deg, rgba(0,0,0,.08) 0 2px, transparent 2px 5px); background-size: 46px 46px, auto; }
-.vines { position: absolute; inset: 0; pointer-events: none; }
-.hero .wrap { position: relative; display: grid; grid-template-columns: 1.05fr .95fr; gap: 50px; align-items: center; padding-block: 60px 80px; }
-.open-badge { display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.35); padding: 9px 14px; border-radius: 999px; font: 600 14.5px/1 var(--sans); }
-.open-badge i { width: 10px; height: 10px; border-radius: 50%; background: var(--daisy); box-shadow: 0 0 0 4px rgba(245,197,24,.3); }
-.hero h1 { font-size: clamp(50px, 6.4vw, 86px); margin: 18px 0 18px; }
-.hero h1 .g { color: #fff3b8; }
-.hero p { font-size: 19.5px; color: #e9f3e0; max-width: 46ch; margin: 0 0 30px; }
-.ctas { display: flex; gap: 14px; flex-wrap: wrap; }
-.stars { display: flex; align-items: center; gap: 12px; margin-top: 30px; font: 600 15.5px/1.3 var(--sans); color: #f2f8ec; }
-.stars b { color: var(--daisy); letter-spacing: 2px; font-size: 18px; }
-.arch { position: relative; justify-self: center; width: min(440px, 100%); }
-.arch .frame { border-radius: 260px 260px 24px 24px; overflow: hidden; border: 10px solid #fff; box-shadow: 0 30px 60px rgba(0,0,0,.3); aspect-ratio: 3 / 4.1; background: #ddd; }
-.arch img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
-.arch .tag { position: absolute; left: -18px; bottom: 34px; background: #fff; color: var(--ink); padding: 12px 16px; border-radius: 14px; box-shadow: 0 14px 30px rgba(0,0,0,.22); font: 600 14.5px/1.3 var(--sans); }
-.arch .tag small { display: block; color: var(--mute); font-weight: 500; }
-.bloom { position: absolute; width: 74px; height: 74px; }
-.b1 { top: -22px; left: -16px; } .b2 { top: 44%; right: -26px; } .b3 { bottom: -18px; right: 40px; width: 56px; height: 56px; }
+/* hero: the flyer's lime field */
+.hero { position: relative; background: linear-gradient(125deg, var(--lime-d) 0%, var(--lime) 45%, var(--lime-b) 100%); overflow: hidden; }
+.hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(115deg, transparent 0 55%, rgba(255,255,255,.12) 55% 72%, transparent 72%); }
+.hero .wrap { position: relative; display: grid; grid-template-columns: 1.1fr .9fr; gap: 46px; align-items: center; padding-block: 54px 70px; }
+.open-badge { display: inline-flex; align-items: center; gap: 10px; background: var(--ink); color: #fff; padding: 9px 15px; border-radius: 999px; font: 600 14px/1.2 var(--sans); }
+.open-badge i { width: 10px; height: 10px; border-radius: 50%; background: var(--sun); flex: none; }
+.hero .name { font: 700 clamp(64px, 9vw, 112px)/.9 var(--round); margin: 20px 0 6px; color: var(--sun); -webkit-text-stroke: 4px var(--ink); paint-order: stroke fill; text-shadow: 0 6px 0 rgba(23,36,15,.25); }
+.hero h1 { font-size: clamp(28px, 3.4vw, 42px); color: var(--ink); }
+.hero p { font-size: 19px; color: #13200b; max-width: 44ch; margin: 16px 0 28px; font-weight: 500; }
+.ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+.stars { display: inline-flex; align-items: center; gap: 10px; margin-top: 24px; font: 600 15.5px/1.3 var(--sans); background: rgba(255,255,255,.85); padding: 10px 16px; border-radius: 14px; }
+.stars b { color: var(--sun-d); letter-spacing: 2px; font-size: 18px; }
+.collage { position: relative; height: 520px; }
+.collage figure { position: absolute; margin: 0; border: 8px solid #fff; border-radius: 26px; overflow: hidden; box-shadow: 0 26px 50px rgba(23,36,15,.3); background: #eee; }
+.collage img { width: 100%; height: 100%; object-fit: cover; }
+.collage .c1 { width: 62%; height: 88%; right: 0; top: 0; transform: rotate(2deg); }
+.collage .c2 { width: 42%; height: 52%; left: 0; bottom: 0; transform: rotate(-4deg); }
+.collage .c3 { width: 34%; height: 38%; left: 10%; top: 4%; transform: rotate(-2deg); }
+.collage .tag { position: absolute; right: 18px; bottom: 6px; z-index: 2; background: var(--sun); color: var(--ink); font: 600 14.5px/1.2 var(--round); padding: 10px 14px; border-radius: 14px; box-shadow: 0 10px 20px rgba(23,36,15,.25); }
 
-/* trust strip */
-.strip { background: #fff; border-bottom: 1px solid var(--line); }
+.strip { background: var(--ink); color: #fff; }
 .strip .wrap { display: grid; grid-template-columns: repeat(4, 1fr); }
-.strip div { padding: 22px 16px; text-align: center; border-left: 1px solid var(--line); }
-.strip div:first-child { border-left: 0; }
-.strip b { display: block; font: 400 28px/1.1 var(--serif); color: var(--grass-d); }
-.strip span { font-size: 14.5px; color: var(--mute); }
+.strip div { padding: 18px 14px; text-align: center; }
+.strip b { display: block; font: 700 24px/1.1 var(--round); color: var(--sun); }
+.strip span { font-size: 14px; color: #cfdcc4; }
 
-section { padding-block: 90px; }
-.sh { text-align: center; max-width: 720px; margin: 0 auto 40px; }
-.sh .kick { font: 600 13px/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--grass); }
-.sh h2 { font-size: clamp(40px, 5vw, 62px); margin-top: 12px; }
-.sh p { color: var(--mute); font-size: 18.5px; margin: 14px auto 0; }
+section { padding-block: 84px; }
+.sh { text-align: center; max-width: 720px; margin: 0 auto 30px; }
+.kick { display: inline-block; font: 600 13px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--lime-d); }
+.sh h2 { font-size: clamp(36px, 4.8vw, 56px); margin-top: 10px; }
+.sh p { color: var(--mute); font-size: 18px; margin: 12px auto 0; }
+mark { background: linear-gradient(transparent 55%, var(--sun) 55%); color: inherit; padding: 0 .08em; }
 
-/* style finder */
-.filters { display: flex; justify-content: center; gap: 10px; margin-bottom: 30px; flex-wrap: wrap; }
-.filters button { font: 600 15px/1 var(--sans); padding: 12px 20px; border-radius: 999px; border: 1.5px solid var(--line); background: #fff; color: var(--ink); cursor: pointer; }
-.filters button[aria-pressed="true"] { background: var(--grass); color: #fff; border-color: var(--grass); }
-.styles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
-.style { background: #fff; border-radius: 22px; overflow: hidden; border: 1px solid var(--line); display: flex; flex-direction: column; transition: transform .25s, box-shadow .25s; min-width: 0; }
-.style:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(29,35,27,.12); }
-.style .ph { aspect-ratio: 4 / 5; overflow: hidden; background: var(--mint); }
-.style .ph img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; }
-.style .bd { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
-.style h3 { font-size: 24px; }
-.style p { margin: 0; font-size: 15px; color: var(--mute); line-height: 1.5; }
-.style .who { font: 600 12px/1 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--gold); }
-.style button { margin-top: auto; align-self: flex-start; font: 600 14.5px/1 var(--sans); padding: 11px 14px; border-radius: 10px; border: 0; background: var(--mint); color: var(--grass-d); cursor: pointer; }
-.style button:hover { background: #dcecc9; }
-.style[hidden] { display: none; }
+/* lookbook */
+.chips-scroll { display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px 12px; margin-bottom: 14px; scrollbar-width: thin; justify-content: center; flex-wrap: wrap; }
+.chip { flex: none; font: 600 15px/1 var(--round); padding: 11px 16px; border-radius: 999px; border: 2px solid var(--line); background: #fff; color: var(--ink); cursor: pointer; }
+.chip small { font: 600 12px/1 var(--sans); color: var(--mute); margin-left: 4px; }
+.chip[aria-pressed="true"] { background: var(--lime); border-color: var(--lime); }
+.chip[aria-pressed="true"] small { color: var(--ink); }
+.looks { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.look { position: relative; border-radius: 18px; overflow: hidden; background: var(--lime-l); aspect-ratio: 4 / 5; min-width: 0; }
+.look > button.open { all: unset; cursor: zoom-in; display: block; width: 100%; height: 100%; }
+.look > button.open:focus-visible { outline: 3px solid var(--sun-d); outline-offset: -3px; }
+.look img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s; }
+.look:hover img { transform: scale(1.04); }
+.look .lbl { position: absolute; left: 8px; bottom: 8px; background: rgba(255,255,255,.92); font: 600 12px/1 var(--sans); padding: 6px 9px; border-radius: 999px; pointer-events: none; }
+.look .add { position: absolute; right: 8px; top: 8px; width: 38px; height: 38px; border-radius: 50%; border: 0; background: #fff; color: var(--ink); font: 700 22px/1 var(--round); cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,.2); display: grid; place-items: center; }
+.look.on { outline: 4px solid var(--lime); outline-offset: -4px; }
+.look.on .add { background: var(--lime); }
+.look[hidden] { display: none; }
+.more { display: flex; justify-content: center; margin-top: 22px; }
+.custom { margin-top: 26px; display: grid; grid-template-columns: auto 1fr auto; gap: 18px; align-items: center; background: var(--lime-l); border: 2px dashed #b9d99c; border-radius: 22px; padding: 20px 24px; }
+.custom .ic { width: 52px; height: 52px; border-radius: 16px; background: var(--sun); display: grid; place-items: center; font-size: 26px; }
+.custom b { font: 700 20px/1.2 var(--round); display: block; }
+.custom span { color: var(--mute); font-size: 15.5px; }
+.tray { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(14px + env(safe-area-inset-bottom, 0px)); z-index: 32; background: var(--ink); color: #fff; border-radius: 999px; padding: 8px 8px 8px 18px; display: none; align-items: center; gap: 12px; box-shadow: 0 14px 30px rgba(23,36,15,.35); font: 600 15px/1 var(--round); white-space: nowrap; }
+.tray.show { display: flex; }
+.tray .btn { padding: 11px 16px; font-size: 14.5px; }
 
-/* walk-in band */
-.walkin { background: var(--mint); }
-.walkin .wrap { display: grid; grid-template-columns: .9fr 1.1fr; gap: 50px; align-items: center; }
-.walkin h2 { font-size: clamp(38px, 4.6vw, 56px); }
+/* lightbox */
+dialog.lb { border: 0; padding: 0; border-radius: 24px; width: min(560px, 94vw); max-height: 92vh; overflow: hidden; background: #fff; }
+dialog.lb::backdrop { background: rgba(10,16,6,.75); }
+.lb .pic { position: relative; background: #111; }
+.lb .pic img { width: 100%; max-height: 66vh; object-fit: contain; margin: 0 auto; }
+.lb .nav { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; border: 0; background: rgba(255,255,255,.9); font: 700 22px/1 var(--round); cursor: pointer; }
+.lb .prev { left: 10px; } .lb .next { right: 10px; }
+.lb .x { position: absolute; right: 10px; top: 10px; width: 40px; height: 40px; border-radius: 50%; border: 0; background: rgba(255,255,255,.9); font: 600 20px/1 var(--sans); cursor: pointer; }
+.lb .bar { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 16px; flex-wrap: wrap; }
+.lb .bar b { font: 700 19px/1.2 var(--round); }
+.lb .bar small { display: block; color: var(--mute); font-size: 13.5px; }
+.lb .bar .acts { display: flex; gap: 8px; }
+.lb .bar .btn { padding: 12px 16px; font-size: 14.5px; }
+
+/* walk-ins */
+.walkin { background: var(--lime-l); }
+.walkin .wrap { display: grid; grid-template-columns: .9fr 1.1fr; gap: 46px; align-items: center; }
+.walkin h2 { font-size: clamp(34px, 4.4vw, 52px); margin: 10px 0 12px; }
 .walkin p { color: var(--mute); font-size: 18px; }
-.hours { background: #fff; border-radius: 22px; padding: 26px 28px; border: 1px solid var(--line); }
-.hours div { display: flex; justify-content: space-between; padding: 11px 0; border-bottom: 1px dashed var(--line); font-weight: 500; }
-.hours div:last-child { border-bottom: 0; }
-.hours div.today { color: var(--grass-d); font-weight: 700; }
-.hours .note { margin-top: 12px; font-size: 14.5px; color: var(--mute); }
+.hours { background: #fff; border-radius: 22px; padding: 22px 26px; border: 1px solid var(--line); }
+.hours div { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px dashed var(--line); font-weight: 500; }
+.hours div:last-of-type { border-bottom: 0; }
+.hours div.today { font-weight: 700; color: var(--lime-d); }
+.hours .note { margin: 10px 0 0; font-size: 14.5px; color: var(--mute); }
 
 /* booking */
-.book .wrap { display: grid; grid-template-columns: .85fr 1.15fr; gap: 46px; align-items: start; }
-.book h2 { font-size: clamp(40px, 5vw, 60px); }
-.book .steps { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 14px; }
-.book .steps li { display: grid; grid-template-columns: 44px 1fr; gap: 12px; align-items: start; }
-.book .steps b { width: 44px; height: 44px; border-radius: 50%; background: var(--mint); color: var(--grass-d); display: grid; place-items: center; font: 400 22px/1 var(--serif); }
-.book .steps span { color: var(--mute); padding-top: 10px; }
-form.card { background: #fff; border: 1px solid var(--line); border-radius: 26px; padding: 30px; box-shadow: 0 24px 50px rgba(29,35,27,.08); }
-form.card h3 { font-size: 30px; margin-bottom: 18px; }
-.f { display: grid; gap: 7px; font: 600 13.5px/1 var(--sans); color: var(--mute); margin-bottom: 16px; }
-.f input, .f select { font: 400 17px/1.4 var(--sans); padding: 13px 14px; border: 1.5px solid #d3dccb; border-radius: 12px; background: var(--paper); color: var(--ink); width: 100%; }
-.f input:focus, .f select:focus { outline: 2px solid var(--grass); border-color: var(--grass); }
+.book .wrap { display: grid; grid-template-columns: .8fr 1.2fr; gap: 44px; align-items: start; }
+.book h2 { font-size: clamp(36px, 4.8vw, 54px); margin: 10px 0 0; }
+.steps { list-style: none; padding: 0; margin: 22px 0 0; display: grid; gap: 14px; }
+.steps li { display: grid; grid-template-columns: 42px 1fr; gap: 12px; align-items: start; }
+.steps b { width: 42px; height: 42px; border-radius: 50%; background: var(--sun); display: grid; place-items: center; font: 700 19px/1 var(--round); }
+.steps span { color: var(--mute); padding-top: 9px; }
+form.card { background: #fff; border: 1px solid var(--line); border-radius: 26px; padding: 28px; box-shadow: 0 24px 50px rgba(23,36,15,.08); min-width: 0; }
+form.card h3 { font-size: 28px; margin-bottom: 16px; }
+.f { display: grid; gap: 8px; font: 600 13.5px/1.2 var(--sans); color: var(--mute); margin-bottom: 18px; min-width: 0; }
+.f > span.q { font: 700 16px/1.2 var(--round); color: var(--ink); }
+.f input:not([type=radio]):not([type=checkbox]), .f select, .f textarea { font: 400 16.5px/1.4 var(--sans); padding: 13px 14px; border: 1.5px solid #d2ddc6; border-radius: 12px; background: var(--paper); color: var(--ink); width: 100%; }
+.f textarea { min-height: 86px; resize: vertical; }
+.f input:focus, .f select:focus, .f textarea:focus { outline: 2px solid var(--lime-d); border-color: var(--lime-d); }
+.refs { border: 2px dashed #c8dcb4; border-radius: 16px; padding: 12px; background: var(--paper); }
+.refs .row { display: flex; gap: 8px; flex-wrap: wrap; }
+.refs .ref { position: relative; width: 64px; height: 80px; border-radius: 10px; overflow: hidden; }
+.refs .ref img { width: 100%; height: 100%; object-fit: cover; }
+.refs .ref button { position: absolute; right: 2px; top: 2px; width: 22px; height: 22px; border-radius: 50%; border: 0; background: rgba(23,36,15,.85); color: #fff; font: 600 13px/1 var(--sans); cursor: pointer; }
+.refs .empty { font: 400 15px/1.45 var(--sans); color: var(--mute); }
+.refs .empty a { color: var(--lime-d); font-weight: 600; }
+.ticks { display: grid; gap: 8px; margin-top: 10px; }
+.tick { display: flex; gap: 10px; align-items: flex-start; font: 500 15.5px/1.4 var(--sans); color: var(--ink); padding: 11px 12px; border: 1.5px solid #d2ddc6; border-radius: 12px; cursor: pointer; background: #fff; }
+.tick input { width: 19px; height: 19px; accent-color: var(--lime-d); margin-top: 1px; flex: none; }
+.tick small { display: block; color: var(--mute); font-size: 13.5px; font-weight: 400; }
+.pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.pills label { position: relative; }
+.pills input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
+.pills span { display: inline-block; padding: 10px 14px; border-radius: 999px; border: 1.5px solid #d2ddc6; font: 500 15px/1 var(--sans); background: var(--paper); color: var(--ink); }
+.pills input:checked + span { background: var(--lime); border-color: var(--lime); font-weight: 600; }
+.pills input:focus-visible + span { outline: 3px solid var(--sun-d); outline-offset: 2px; }
 .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-.chips { display: flex; flex-wrap: wrap; gap: 8px; }
-.chips label { position: relative; }
-.chips input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
-.chips span { display: inline-block; padding: 10px 14px; border-radius: 999px; border: 1.5px solid #d3dccb; font: 500 15px/1 var(--sans); background: var(--paper); }
-.chips input:checked + span { background: var(--grass); border-color: var(--grass); color: #fff; }
-.chips input:focus-visible + span { outline: 3px solid var(--daisy); outline-offset: 2px; }
-.fineprint { font-size: 13.5px; color: var(--mute); margin-top: 12px; }
+.err { display: none; color: #a3240e; font: 600 14.5px/1.4 var(--sans); margin: -6px 0 14px; }
+.err.show { display: block; }
+.fineprint { font-size: 13.5px; color: var(--mute); margin: 12px 0 0; }
 
 /* reviews */
-.reviews { background: linear-gradient(180deg, var(--grass-d), var(--grass)); color: #fff; }
-.reviews .sh .kick { color: var(--daisy); } .reviews .sh p { color: #dbe9d0; }
-.rgrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
-.rv-card { margin: 0; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2); border-radius: 22px; padding: 26px; }
-.rv-card .st { color: var(--daisy); letter-spacing: 3px; }
-.rv-card p { font: 400 22px/1.4 var(--serif); margin: 10px 0 12px; }
-.rv-card cite { font-style: normal; font-size: 14px; color: #cfe2c3; }
+.reviews { background: linear-gradient(125deg, var(--lime-d), var(--lime)); }
+.reviews .kick { color: var(--ink); }
+.rgrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.rv-card { margin: 0; background: #fff; border-radius: 22px; padding: 24px; box-shadow: 0 16px 30px rgba(23,36,15,.15); }
+.rv-card .st { color: var(--sun-d); letter-spacing: 3px; }
+.rv-card p { font: 500 20px/1.4 var(--round); margin: 8px 0 12px; }
+.rv-card cite { font-style: normal; font-size: 14px; color: var(--mute); }
 
-/* gallery */
-.gal { columns: 4 220px; column-gap: 14px; }
-.gal img { width: 100%; border-radius: 18px; margin-bottom: 14px; break-inside: avoid; }
-
-/* visit */
 .visit .wrap { display: grid; grid-template-columns: 1fr 1.1fr; gap: 40px; align-items: center; }
-.visit h2 { font-size: clamp(38px, 4.6vw, 56px); margin: 12px 0 16px; }
+.visit h2 { font-size: clamp(34px, 4.4vw, 52px); margin: 10px 0 14px; }
 .visit p { color: var(--mute); }
-.map { border-radius: 26px; overflow: hidden; border: 8px solid #fff; box-shadow: 0 20px 40px rgba(29,35,27,.12); aspect-ratio: 4 / 3; background: var(--mint); }
+.map { border-radius: 26px; overflow: hidden; border: 8px solid #fff; box-shadow: 0 20px 40px rgba(23,36,15,.12); aspect-ratio: 4 / 3; background: var(--lime-l); }
 .map iframe { width: 100%; height: 100%; border: 0; display: block; }
-footer { background: var(--grass-d); color: #d8e6ce; padding-block: 40px 110px; text-align: center; font-size: 15.5px; }
-footer b { display: block; font: 400 30px/1 var(--serif); color: #fff; margin-bottom: 10px; }
+footer { background: var(--ink); color: #cfdcc4; padding-block: 40px 110px; text-align: center; font-size: 15.5px; }
+footer b { display: block; font: 700 30px/1 var(--round); color: var(--sun); margin-bottom: 10px; }
 .dock { position: fixed; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom, 0px)); z-index: 30; display: none; gap: 8px; }
-.dock a { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; font: 600 16px/1 var(--sans); padding: 16px 10px; border-radius: 14px; box-shadow: 0 10px 24px rgba(29,35,27,.3); }
-.dock .call { flex: 0 0 30%; background: #fff; color: var(--grass-d); }
-.dock .bk { background: var(--grass); color: #fff; }
-.rv { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+.dock a { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; font: 600 16px/1 var(--round); padding: 16px 10px; border-radius: 999px; box-shadow: 0 10px 24px rgba(23,36,15,.3); }
+.dock .call { flex: 0 0 30%; background: #fff; color: var(--ink); }
+.dock .bk { background: var(--ink); color: #fff; }
+.rv { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
 .rv.in { opacity: 1; transform: none; }
 
 @media (max-width: 1000px) {
   .top nav { display: none; } .menu-btn { display: inline-flex; }
   .hero .wrap, .walkin .wrap, .book .wrap, .visit .wrap { grid-template-columns: 1fr; }
-  .styles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .collage { height: 440px; max-width: 520px; width: 100%; margin: 0 auto; }
+  .looks { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .rgrid { grid-template-columns: 1fr; }
   .strip .wrap { grid-template-columns: 1fr 1fr; }
-  .strip div:nth-child(3) { border-left: 0; } .strip div:nth-child(n+3) { border-top: 1px solid var(--line); }
 }
 @media (max-width: 640px) {
-  section { padding-block: 64px; }
-  .hero .wrap { padding-block: 40px 60px; gap: 44px; }
-  .hero h1 { font-size: 46px; }
-  .hero p { font-size: 18px; }
+  section { padding-block: 60px; }
+  .hero .wrap { padding-block: 34px 50px; gap: 34px; }
+  .hero .name { -webkit-text-stroke: 3px var(--ink); }
+  .hero p { font-size: 17.5px; }
   .ctas .btn { flex: 1 1 100%; }
-  .arch { width: min(330px, 86%); }
-  .arch .tag { left: -8px; }
-  .styles { gap: 10px; }
-  .style h3 { font-size: 20px; } .style p { display: none; } .style .bd { padding: 12px 12px 14px; }
+  .collage { height: 360px; }
+  .chips-scroll { flex-wrap: nowrap; justify-content: flex-start; margin-inline: -18px; padding-inline: 18px; }
+  .looks { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .custom { grid-template-columns: auto 1fr; }
+  .custom .btn { grid-column: 1 / -1; }
   .row2 { grid-template-columns: 1fr; gap: 0; }
-  form.card { padding: 22px 18px; }
-  .gal { columns: 2; column-gap: 10px; } .gal img { margin-bottom: 10px; }
+  form.card { padding: 22px 16px; }
   .dock { display: flex; }
-  .brand b { font-size: 22px; }
+  .tray { bottom: calc(80px + env(safe-area-inset-bottom, 0px)); }
+  .brand b { font-size: 20px; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } .rv { opacity: 1; transform: none; } html { scroll-behavior: auto; } }
 </style>
@@ -200,79 +234,68 @@ footer b { display: block; font: 400 30px/1 var(--serif); color: #fff; margin-bo
 <body>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
-  <symbol id="rose" viewBox="0 0 60 60"><g fill="#fff"><circle cx="30" cy="30" r="13"/><circle cx="18" cy="24" r="10"/><circle cx="42" cy="24" r="10"/><circle cx="20" cy="40" r="10"/><circle cx="40" cy="40" r="10"/></g><circle cx="30" cy="30" r="6" fill="#f3efe2"/><path d="M27 30a3 3 0 106 0" stroke="#d9d2bd" stroke-width="1.4" fill="none"/></symbol>
-  <symbol id="daisy" viewBox="0 0 60 60"><g fill="#f5c518">
-    <ellipse cx="30" cy="12" rx="6" ry="11"/><ellipse cx="30" cy="48" rx="6" ry="11"/><ellipse cx="12" cy="30" rx="11" ry="6"/><ellipse cx="48" cy="30" rx="11" ry="6"/>
-    <ellipse cx="17" cy="17" rx="6" ry="11" transform="rotate(-45 17 17)"/><ellipse cx="43" cy="43" rx="6" ry="11" transform="rotate(-45 43 43)"/>
-    <ellipse cx="43" cy="17" rx="6" ry="11" transform="rotate(45 43 17)"/><ellipse cx="17" cy="43" rx="6" ry="11" transform="rotate(45 17 43)"/></g>
-    <circle cx="30" cy="30" r="8" fill="#b8892f"/></symbol>
-  <symbol id="logo" viewBox="0 0 48 48"><circle cx="24" cy="24" r="23" fill="#2f6b2a"/><path d="M15 34c4-14 14-14 18 0M19 30h10" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round"/><path d="M24 9c-3 4-3 8 0 11 3-3 3-7 0-11z" fill="#8cbf5a"/><circle cx="34" cy="14" r="3" fill="#f5c518"/></symbol>
   <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.2-.4.2-.4.7-1.3a.5.5 0 000-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.1 5.1 0 001.1 2.7 11.7 11.7 0 004.5 4c1.7.7 2.3.7 3.1.6a2.7 2.7 0 001.8-1.3 2.2 2.2 0 00.2-1.3c-.1-.1-.3-.2-.5-.3z"/></symbol>
 </defs></svg>
 
-<div class="demo">Demo website made for Ady's African Hair Braiding. Styles and prices to be confirmed by you.</div>
+<div class="demo">Demo website made for Ady's African Hair Braiding. Every photo is your own work from Instagram.</div>
 
 <header class="top"><div class="wrap">
-  <a class="brand" href="#top" aria-label="Ady's African Hair Braiding home"><svg aria-hidden="true"><use href="#logo"/></svg><span><b>Ady's</b><small>African Hair Braiding</small></span></a>
-  <nav aria-label="Primary"><a href="#styles">Styles</a><a href="#walkin">Walk-ins</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a><a class="btn" href="#book">Book now</a></nav>
+  <a class="brand" href="#top" aria-label="Ady's African Hair Braiding home"><span class="badge yl" aria-hidden="true">A's</span><span><b>Ady's</b><small>African Hair Braiding</small></span></a>
+  <nav aria-label="Primary"><a href="#looks">Lookbook</a><a href="#walkin">Walk-ins</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a><a class="btn" href="#book">Book now</a></nav>
   <button class="menu-btn" type="button" id="menuBtn" aria-expanded="false" aria-controls="drop"><i><b></b><b></b><b></b></i>Menu</button>
 </div></header>
 <div class="scrim" id="scrim"></div>
-<nav class="drop" id="drop" aria-label="Menu"><a href="#styles">Styles</a><a href="#book">Book now</a><a href="#walkin">Walk-ins &amp; hours</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#visit">Visit us</a></nav>
+<nav class="drop" id="drop" aria-label="Menu"><a href="#looks">Lookbook</a><a href="#book">Book now</a><a href="#walkin">Walk-ins &amp; hours</a><a href="#reviews">Reviews</a><a href="#visit">Visit us</a></nav>
 
-<div class="hero" id="top">
-  <svg class="vines" viewBox="0 0 1440 700" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M0 80 C 200 40, 320 140, 520 90 S 900 30, 1100 100 S 1340 60, 1440 90" fill="none" stroke="#8cbf5a" stroke-width="3" opacity=".5"/>
-    <path d="M0 640 C 260 600, 420 690, 700 640 S 1180 600, 1440 650" fill="none" stroke="#8cbf5a" stroke-width="3" opacity=".45"/>
-  </svg>
-  <div class="wrap">
-    <div>
-      <span class="open-badge rv" id="openBadge"><i></i><span id="openText">Walk-ins welcome · 9 AM – 6 PM, 7 days</span></span>
-      <h1 class="rv">Braids that turn <span class="g">heads</span> in Dorchester.</h1>
-      <p class="rv">Knotless, boho goddess, Fulani, twists, feed-ins and cornrows, for women, men and kids. Neat, quick hands and a salon that treats you like family.</p>
-      <div class="ctas rv"><a class="btn" href="#book"><svg aria-hidden="true"><use href="#wa"/></svg>Book on WhatsApp</a><a class="btn light" href="#styles">See the styles</a></div>
-      <div class="stars rv"><b>★★★★★</b><span>4.7 from 374 Google reviews</span></div>
-    </div>
-    <div class="arch rv">
-      <svg class="bloom b1" aria-hidden="true"><use href="#rose"/></svg>
-      <svg class="bloom b2" aria-hidden="true"><use href="#daisy"/></svg>
-      <svg class="bloom b3" aria-hidden="true"><use href="#rose"/></svg>
-      <div class="frame"><img src="img/hero.webp" alt="Long boho knotless braids photographed against the salon's green flower wall" width="640" height="852"></div>
-      <div class="tag">Boho knotless braids<small>Finished at Ady's flower wall</small></div>
-    </div>
+<div class="hero" id="top"><div class="wrap">
+  <div>
+    <span class="open-badge rv"><i></i><span id="openText">Walk-ins welcome · 9 AM – 6 PM, 7 days</span></span>
+    <div class="name rv" aria-hidden="true">Ady's</div>
+    <h1 class="rv">African Hair Braiding in Dorchester, Boston</h1>
+    <p class="rv">Knotless, boho, Fulani, cornrows, twists and colour, for women, men and kids. Pick a look from our real work, or bring your own picture.</p>
+    <div class="ctas rv"><a class="btn" href="#looks">Browse 80+ styles</a><a class="btn white" href="#book"><svg aria-hidden="true"><use href="#wa"/></svg>Book on WhatsApp</a></div>
+    <div class="stars rv"><b>★★★★★</b><span>4.7 from 374 Google reviews</span></div>
   </div>
-</div>
+  <div class="collage rv">
+    <figure class="c1"><img src="img/hero.webp" alt="Long boho braids finished at the salon's flower wall" width="640" height="852"></figure>
+    <figure class="c3"><img src="img/lb/t/8.webp" alt="Men's cornrows with clean parts"></figure>
+    <figure class="c2"><img src="img/lb/t/62.webp" alt="Honey blonde box braids"></figure>
+    <span class="tag">Real work, Dorchester Ave</span>
+  </div>
+</div></div>
 
 <div class="strip"><div class="wrap">
   <div><b>4.7 ★</b><span>374 Google reviews</span></div>
-  <div><b>7 days</b><span>Open Monday – Sunday</span></div>
-  <div><b>Walk-ins</b><span>Welcome 9 AM – 6 PM</span></div>
-  <div><b>All ages</b><span>Women, men &amp; kids</span></div>
+  <div><b>7 days</b><span>Monday – Sunday</span></div>
+  <div><b>Walk-ins</b><span>9 AM – 6 PM</span></div>
+  <div><b>Women · Men · Kids</b><span>All ages welcome</span></div>
 </div></div>
 
-<section id="styles"><div class="wrap">
-  <div class="sh rv"><span class="kick">The style menu</span><h2>Find your <span class="g">next look.</span></h2><p>Tap a style to start your booking. Every photo here was braided at Ady's.</p></div>
-  <div class="filters rv" role="group" aria-label="Filter styles">
-    <button type="button" data-f="all" aria-pressed="true">All styles</button><button type="button" data-f="women" aria-pressed="false">Women</button><button type="button" data-f="men" aria-pressed="false">Men</button><button type="button" data-f="kids" aria-pressed="false">Kids</button>
-  </div>
-  <div class="styles" id="styleGrid">
-    <article class="style rv" data-who="women"><div class="ph"><img src="img/knotless.webp" alt="Long black knotless braids" loading="lazy"></div><div class="bd"><span class="who">Women</span><h3>Knotless braids</h3><p>Light, natural-looking and gentle on your edges.</p><button type="button" data-style="Knotless braids">Book this</button></div></article>
-    <article class="style rv" data-who="women"><div class="ph"><img src="img/boho.webp" alt="Boho goddess braids with curly ends" loading="lazy"></div><div class="bd"><span class="who">Women</span><h3>Boho &amp; goddess</h3><p>Braids with soft curly pieces for an effortless look.</p><button type="button" data-style="Boho / goddess braids">Book this</button></div></article>
-    <article class="style rv" data-who="women"><div class="ph"><img src="img/fulani.webp" alt="Fulani-style braids with cornrows and loose curls" loading="lazy"></div><div class="bd"><span class="who">Women</span><h3>Fulani &amp; tribal</h3><p>Cornrow patterns up front with flowing braids behind.</p><button type="button" data-style="Fulani / tribal braids">Book this</button></div></article>
-    <article class="style rv" data-who="women"><div class="ph"><img src="img/twists.webp" alt="Spring twists at shoulder length" loading="lazy"></div><div class="bd"><span class="who">Women</span><h3>Twists</h3><p>Spring, passion and Senegalese twists.</p><button type="button" data-style="Twists">Book this</button></div></article>
-    <article class="style rv" data-who="women"><div class="ph"><img src="img/ponytail.webp" alt="Feed-in braids swept into a high ponytail" loading="lazy"></div><div class="bd"><span class="who">Women</span><h3>Feed-in ponytail</h3><p>Sleek feed-in cornrows into a long braided ponytail.</p><button type="button" data-style="Feed-in ponytail">Book this</button></div></article>
-    <article class="style rv" data-who="women"><div class="ph"><img src="img/blonde.webp" alt="Honey blonde goddess braids with curls" loading="lazy"></div><div class="bd"><span class="who">Women</span><h3>Colour braids</h3><p>Honey blonde, burgundy and custom colour blends.</p><button type="button" data-style="Colour braids">Book this</button></div></article>
-    <article class="style rv" data-who="men"><div class="ph"><img src="img/mens.webp" alt="Men's cornrows with clean parts" loading="lazy"></div><div class="bd"><span class="who">Men</span><h3>Cornrows &amp; stitch</h3><p>Clean parts, stitch braids and freestyle designs.</p><button type="button" data-style="Men's cornrows / stitch braids">Book this</button></div></article>
-    <article class="style rv" data-who="kids"><div class="ph"><img src="img/kids2.webp" alt="Child's braids with colourful beads" loading="lazy"></div><div class="bd"><span class="who">Kids</span><h3>Kids' braids</h3><p>Gentle hands, cute beads and styles that last.</p><button type="button" data-style="Kids' braids">Book this</button></div></article>
+<section id="looks"><div class="wrap">
+  <div class="sh rv"><span class="kick">The lookbook</span><h2>Find your <mark>next look.</mark></h2><p>Every photo here was braided at Ady's. Tap one to see it big, press <b>+</b> to add it to your booking as a reference.</p></div>
+  <div class="chips-scroll" id="chips" role="group" aria-label="Filter styles"></div>
+  <div class="looks" id="grid"></div>
+  <div class="more"><button class="btn ghost" type="button" id="moreBtn">Show more styles</button></div>
+  <div class="custom rv">
+    <span class="ic" aria-hidden="true">📸</span>
+    <div><b>Don't see your style?</b><span>We braid almost any African style. Bring a picture from Instagram, TikTok or Pinterest and we'll match it, and tell you the price first.</span></div>
+    <a class="btn" href="#book" id="ownPicLink">Book with my own picture</a>
   </div>
 </div></section>
 
+<div class="tray" id="tray" role="status"><span id="trayText">1 style picked</span><a class="btn sun" href="#book">Continue to booking</a></div>
+
+<dialog class="lb" id="lb" aria-label="Style photo">
+  <div class="pic"><img id="lbImg" alt=""><button class="nav prev" type="button" id="lbPrev" aria-label="Previous photo">‹</button><button class="nav next" type="button" id="lbNext" aria-label="Next photo">›</button><button class="x" type="button" id="lbX" aria-label="Close">✕</button></div>
+  <div class="bar"><div><b id="lbCat">Style</b><small>Braided at Ady's · price confirmed on WhatsApp</small></div><div class="acts"><button class="btn white" type="button" id="lbAdd" style="border:2px solid var(--ink)">+ Add</button><button class="btn" type="button" id="lbBook">Book this look</button></div></div>
+</dialog>
+
 <section class="walkin" id="walkin"><div class="wrap">
   <div class="rv">
-    <div class="sh" style="text-align:left;margin:0 0 10px"><span class="kick">No appointment?</span></div>
-    <h2>Walk in. <span class="g">Walk out braided.</span></h2>
+    <span class="kick">No appointment?</span>
+    <h2>Walk in. Walk out braided.</h2>
     <p>We take walk-ins every day of the week. For long styles or a set time, book ahead on WhatsApp so your braider is ready for you.</p>
-    <a class="btn" href="#book" style="margin-top:10px"><svg aria-hidden="true"><use href="#wa"/></svg>Reserve a time</a>
+    <a class="btn" href="#book" style="margin-top:8px"><svg aria-hidden="true"><use href="#wa"/></svg>Reserve a time</a>
   </div>
   <div class="hours rv" id="hours" aria-label="Opening hours">
     <div data-d="1"><span>Monday</span><span>9 AM – 6 PM</span></div>
@@ -288,39 +311,51 @@ footer b { display: block; font: 400 30px/1 var(--serif); color: #fff; margin-bo
 
 <section class="book" id="book"><div class="wrap">
   <div class="rv">
-    <div class="sh" style="text-align:left;margin:0 0 10px"><span class="kick">Book your braids</span></div>
-    <h2>Pick a style, <span class="g">pick a time.</span></h2>
+    <span class="kick">Book your braids</span>
+    <h2>Show us the look. We'll do the rest.</h2>
     <ul class="steps">
-      <li><b>1</b><span>Choose your style, length and size.</span></li>
-      <li><b>2</b><span>Pick a day and time that works for you.</span></li>
-      <li><b>3</b><span>Send it on WhatsApp. We confirm your spot and price.</span></li>
+      <li><b>1</b><span>Pick photos from the lookbook, add your own picture, or just describe it.</span></li>
+      <li><b>2</b><span>Choose a length, size, day and time.</span></li>
+      <li><b>3</b><span>Send it on WhatsApp. We reply with your price and confirm your spot.</span></li>
     </ul>
   </div>
-  <form class="card rv" id="form">
+  <form class="card rv" id="form" novalidate>
     <h3>Booking request</h3>
-    <label class="f">Style<select name="style" id="styleSel">
-      <option>Knotless braids</option><option>Boho / goddess braids</option><option>Fulani / tribal braids</option><option>Twists</option><option>Feed-in ponytail</option><option>Colour braids</option><option>Men's cornrows / stitch braids</option><option>Kids' braids</option><option>Wash &amp; blow-dry</option><option>Not sure, need advice</option></select></label>
-    <div class="f">Length<div class="chips" role="group" aria-label="Length">
-      <label><input type="radio" name="len" value="Shoulder" checked><span>Shoulder</span></label>
+    <div class="f"><span class="q">Who is it for?</span><div class="pills" role="group" aria-label="Who is it for">
+      <label><input type="radio" name="who" value="Me" checked><span>Me</span></label>
+      <label><input type="radio" name="who" value="A man / boy"><span>Man</span></label>
+      <label><input type="radio" name="who" value="My child"><span>My child</span></label></div></div>
+    <div class="f"><span class="q">The look you want</span>
+      <div class="refs" id="refs"></div>
+      <div class="ticks">
+        <label class="tick"><input type="checkbox" name="own" id="own"><span>I have my own picture<small>Attach it in the WhatsApp chat after you press send.</small></span></label>
+        <label class="tick"><input type="checkbox" name="help" id="help"><span>Not sure yet, help me choose<small>Your braider will suggest styles for your hair.</small></span></label>
+      </div></div>
+    <label class="f"><span class="q">Describe it <span style="font-weight:500;color:var(--mute)">(optional)</span></span><textarea name="desc" placeholder="e.g. medium knotless, waist length, curly ends, colour 1B/30"></textarea></label>
+    <div class="f"><span class="q">Length</span><div class="pills" role="group" aria-label="Length">
+      <label><input type="radio" name="len" value="Not sure" checked><span>Not sure</span></label>
+      <label><input type="radio" name="len" value="Shoulder"><span>Shoulder</span></label>
       <label><input type="radio" name="len" value="Mid-back"><span>Mid-back</span></label>
       <label><input type="radio" name="len" value="Waist"><span>Waist</span></label>
       <label><input type="radio" name="len" value="Extra long"><span>Extra long</span></label></div></div>
-    <div class="f">Size<div class="chips" role="group" aria-label="Size">
+    <div class="f"><span class="q">Size</span><div class="pills" role="group" aria-label="Size">
+      <label><input type="radio" name="size" value="Not sure" checked><span>Not sure</span></label>
       <label><input type="radio" name="size" value="Small"><span>Small</span></label>
-      <label><input type="radio" name="size" value="Medium" checked><span>Medium</span></label>
+      <label><input type="radio" name="size" value="Medium"><span>Medium</span></label>
       <label><input type="radio" name="size" value="Large"><span>Large</span></label></div></div>
     <div class="row2">
-      <label class="f">Date<input type="date" name="date" required></label>
-      <label class="f">Time<select name="time"><option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option></select></label>
+      <label class="f"><span class="q">Day</span><input type="date" name="date" required></label>
+      <label class="f"><span class="q">Time</span><select name="time"><option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option></select></label>
     </div>
-    <label class="f">Your name<input name="name" autocomplete="name" required></label>
+    <label class="f"><span class="q">Your name</span><input name="name" autocomplete="name" required></label>
+    <p class="err" id="err" role="alert"></p>
     <button class="btn" type="submit" style="width:100%"><svg aria-hidden="true"><use href="#wa"/></svg>Send booking on WhatsApp</button>
-    <p class="fineprint">Prices depend on style, length and size; we confirm yours before your appointment.</p>
+    <p class="fineprint">Price depends on the style, length and size. We confirm it on WhatsApp before your appointment.</p>
   </form>
 </div></section>
 
 <section class="reviews" id="reviews"><div class="wrap">
-  <div class="sh rv"><span class="kick">What clients say</span><h2>4.7 stars from <span class="g" style="color:#fff3b8">374 reviews.</span></h2><p>New five-star reviews every week on Google.</p></div>
+  <div class="sh rv"><span class="kick">What clients say</span><h2>4.7 stars from 374 reviews.</h2><p style="color:#13200b">New five-star reviews every week on Google.</p></div>
   <div class="rgrid">
     <figure class="rv-card rv"><div class="st">★★★★★</div><p>"Every time I come here I leave happy. They always do a great job."</p><cite>Google review · third visit</cite></figure>
     <figure class="rv-card rv"><div class="st">★★★★★</div><p>"Rita was so kind and is extremely talented and quick with her braiding."</p><cite>Google review · stitch braids</cite></figure>
@@ -328,67 +363,134 @@ footer b { display: block; font: 400 30px/1 var(--serif); color: #fff; margin-bo
   </div>
 </div></section>
 
-<section id="gallery"><div class="wrap">
-  <div class="sh rv"><span class="kick">Fresh from the flower wall</span><h2>Recent <span class="g">work.</span></h2></div>
-  <div class="gal rv">
-    <img src="img/flowerwall.webp" alt="Copper boho braids at the flower wall" loading="lazy">
-    <img src="img/red.webp" alt="Burgundy goddess braids with curly ends" loading="lazy">
-    <img src="img/goddess.webp" alt="Long black goddess braids, back view" loading="lazy">
-    <img src="img/side.webp" alt="Knotless braids with silver strands, side view" loading="lazy">
-    <img src="img/mens2.webp" alt="Men's cornrows, side view" loading="lazy">
-    <img src="img/bob.webp" alt="Bob-length braids with curly ends" loading="lazy">
-    <img src="img/crochet.webp" alt="Crochet curls over cornrows" loading="lazy">
-    <img src="img/kids.webp" alt="Child's cornrows with beads" loading="lazy">
-  </div>
-</div></section>
-
-<section class="visit" id="visit" style="padding-top:0"><div class="wrap">
+<section class="visit" id="visit"><div class="wrap">
   <div class="rv">
-    <div class="sh" style="text-align:left;margin:0"><span class="kick">Visit the salon</span></div>
-    <h2>1736 Dorchester Ave, <span class="g">Boston.</span></h2>
+    <span class="kick">Visit the salon</span>
+    <h2>1736 Dorchester Ave, Boston</h2>
     <p>Dorchester Center, MA 02124. Open 7 days, 9 AM – 6 PM. Walk-ins welcome.</p>
-    <div class="ctas" style="margin-top:22px"><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=1736%20Dorchester%20Ave%2C%20Dorchester%20Center%2C%20MA%2002124" target="_blank" rel="noopener">Get directions</a><a class="btn light" href="tel:+16179389917">Call (617) 938-9917</a></div>
+    <div class="ctas" style="margin-top:20px"><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=1736%20Dorchester%20Ave%2C%20Dorchester%20Center%2C%20MA%2002124" target="_blank" rel="noopener">Get directions</a><a class="btn white" href="tel:+16179389917" style="border:2px solid var(--ink)">Call (617) 938-9917</a></div>
   </div>
   <div class="map rv"><iframe title="Map: Ady's African Hair Braiding, 1736 Dorchester Ave" src="https://www.google.com/maps?q=1736+Dorchester+Ave,+Dorchester+Center,+MA+02124&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 </div></section>
 
-<footer><b>Ady's African Hair Braiding</b>1736 Dorchester Ave, Dorchester Center, MA 02124 · <a href="tel:+16179389917" style="color:#fff">(617) 938-9917</a> · <a href="https://www.instagram.com/adys_african_hair_braiding/" target="_blank" rel="noopener" style="color:#fff">@adys_african_hair_braiding</a></footer>
+<footer><b>Ady's</b>African Hair Braiding · 1736 Dorchester Ave, Dorchester Center, MA 02124<br><a href="tel:+16179389917" style="color:#fff">(617) 938-9917</a> · <a href="https://www.instagram.com/adys_african_hair_braiding/" target="_blank" rel="noopener" style="color:#fff">@adys_african_hair_braiding</a></footer>
 <div class="dock"><a class="call" href="tel:+16179389917">Call</a><a class="bk" href="#book"><svg width="20" height="20" aria-hidden="true"><use href="#wa"/></svg>Book on WhatsApp</a></div>
 
 <script>
 (() => {
   const WA = '16179389917';
+  const CATS = { box: 'Knotless & box braids', boho: 'Boho & goddess', fulani: 'Fulani & tribal', cornrows: 'Cornrows & feed-ins', twists: 'Twists, locs & crochet', colour: 'Colour braids', men: "Men's braids", kids: "Kids' braids" };
+  const SHORT = { box: 'Knotless & box', boho: 'Boho', fulani: 'Fulani', cornrows: 'Cornrows', twists: 'Twists & crochet', colour: 'Colour', men: 'Men', kids: 'Kids' };
+  const RAW = [[15,"box"],[20,"box"],[21,"box"],[32,"box"],[39,"box"],[47,"box"],[48,"box"],[50,"box"],[52,"box"],[54,"box"],[59,"box"],[63,"box"],[70,"box"],[74,"box"],[75,"box"],[80,"box"],[84,"box"],[87,"box"],[90,"box"],[92,"box"],[94,"box"],[0,"boho"],[41,"boho"],[57,"boho"],[58,"boho"],[60,"boho"],[72,"boho"],[83,"boho"],[91,"boho"],[97,"boho"],[99,"boho"],[102,"boho"],[4,"fulani"],[11,"fulani"],[16,"fulani"],[33,"fulani"],[71,"fulani"],[79,"fulani"],[81,"fulani"],[82,"fulani"],[1,"cornrows"],[2,"cornrows"],[3,"cornrows"],[5,"cornrows"],[6,"cornrows"],[7,"cornrows"],[12,"cornrows"],[17,"cornrows"],[26,"cornrows"],[27,"cornrows"],[34,"cornrows"],[35,"cornrows"],[42,"cornrows"],[65,"cornrows"],[66,"cornrows"],[68,"cornrows"],[24,"twists"],[30,"twists"],[31,"twists"],[53,"twists"],[88,"twists"],[96,"twists"],[18,"colour"],[22,"colour"],[23,"colour"],[28,"colour"],[45,"colour"],[61,"colour"],[62,"colour"],[73,"colour"],[76,"colour"],[77,"colour"],[85,"colour"],[95,"colour"],[98,"colour"],[100,"colour"],[8,"men"],[14,"men"],[86,"men"],[9,"kids"],[10,"kids"],[89,"kids"]];
+  const byK = Object.fromEntries(RAW);
+  // "All" order: round-robin across families so the first screen shows the full range (incl. men + kids)
+  const by = {}; RAW.forEach(([k, c]) => (by[c] = by[c] || []).push(k));
+  const ALL = []; let more = true;
+  for (let i = 0; more; i++) { more = false; for (const c of Object.keys(CATS)) if (by[c][i] !== undefined) { ALL.push([by[c][i], c]); more = true; } }
+  const PAGE = 12; let filter = 'all', shown = PAGE, current = [], lbK = null;
+  const picked = [];
+  const grid = document.getElementById('grid'), chips = document.getElementById('chips'), moreBtn = document.getElementById('moreBtn');
+  const full = k => 'img/lb/' + k + '.webp', thumb = k => 'img/lb/t/' + k + '.webp';
+
+  // chips
+  const mk = (key, label, n) => { const b = document.createElement('button'); b.type = 'button'; b.className = 'chip'; b.dataset.f = key; b.setAttribute('aria-pressed', key === 'all'); b.innerHTML = label + ' <small>' + n + '</small>'; chips.appendChild(b); };
+  mk('all', 'All styles', ALL.length); Object.keys(CATS).forEach(c => mk(c, SHORT[c], by[c].length));
+  chips.addEventListener('click', e => { const b = e.target.closest('.chip'); if (!b) return; filter = b.dataset.f; shown = PAGE; chips.querySelectorAll('.chip').forEach(x => x.setAttribute('aria-pressed', x === b)); render(); });
+
+  // tiles (built once)
+  const tiles = new Map();
+  ALL.forEach(([k, c]) => {
+    const d = document.createElement('div'); d.className = 'look'; d.dataset.k = k;
+    d.innerHTML = '<button class="open" type="button" aria-label="View ' + CATS[c] + ' photo"><img src="' + thumb(k) + '" alt="' + CATS[c] + ' braided at Ady\'s" loading="lazy"></button><span class="lbl">' + SHORT[c] + '</span><button class="add" type="button" aria-pressed="false" aria-label="Add to my booking">+</button>';
+    d.querySelector('.open').onclick = () => openLb(k);
+    d.querySelector('.add').onclick = () => toggle(k);
+    tiles.set(k, d); grid.appendChild(d);
+  });
+  function render() {
+    current = ALL.filter(([, c]) => filter === 'all' || c === filter).map(([k]) => k);
+    const vis = new Set(current.slice(0, shown));
+    tiles.forEach((d, k) => d.hidden = !vis.has(k));
+    current.forEach(k => grid.appendChild(tiles.get(k)));
+    moreBtn.parentElement.style.display = current.length > shown ? 'flex' : 'none';
+    moreBtn.textContent = 'Show ' + Math.min(PAGE, current.length - shown) + ' more';
+  }
+  moreBtn.onclick = () => { shown += PAGE; render(); };
+
+  // picking references
+  const tray = document.getElementById('tray'), trayText = document.getElementById('trayText'), refs = document.getElementById('refs'), bookSec = document.getElementById('book');
+  const inView = el => { const r = el.getBoundingClientRect(); return r.top < innerHeight && r.bottom > 0; };
+  const trayUpd = () => tray.classList.toggle('show', picked.length > 0 && !inView(bookSec));
+  function toggle(k, force) {
+    const i = picked.indexOf(k), on = force === undefined ? i < 0 : force;
+    if (on && i < 0) { if (picked.length >= 4) picked.shift(); picked.push(k); }
+    if (!on && i >= 0) picked.splice(i, 1);
+    sync();
+  }
+  function sync() {
+    tiles.forEach((d, k) => { const on = picked.includes(k); d.classList.toggle('on', on); const b = d.querySelector('.add'); b.textContent = on ? '✓' : '+'; b.setAttribute('aria-pressed', on); b.setAttribute('aria-label', on ? 'Remove from my booking' : 'Add to my booking'); });
+    trayUpd();
+    trayText.textContent = picked.length + (picked.length === 1 ? ' style picked' : ' styles picked');
+    refs.innerHTML = picked.length
+      ? '<div class="row">' + picked.map(k => '<div class="ref"><img src="' + thumb(k) + '" alt="' + CATS[byK[k]] + '"><button type="button" data-k="' + k + '" aria-label="Remove">✕</button></div>').join('') + '</div>'
+      : '<p class="empty" style="margin:0">No photos picked yet. <a href="#looks">Browse the lookbook</a> and press + on any style (up to 4).</p>';
+    if (lbK !== null) setLbAdd();
+  }
+  refs.addEventListener('click', e => { const b = e.target.closest('button[data-k]'); if (b) toggle(+b.dataset.k, false); });
+  addEventListener('scroll', trayUpd, { passive: true });
+
+  // lightbox
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbAdd = document.getElementById('lbAdd');
+  function setLbAdd() { const on = picked.includes(lbK); lbAdd.textContent = on ? '✓ Added' : '+ Add'; lbAdd.setAttribute('aria-pressed', on); }
+  function openLb(k) { lbK = k; lbImg.src = full(k); lbImg.alt = CATS[byK[k]] + " braided at Ady's"; document.getElementById('lbCat').textContent = CATS[byK[k]]; setLbAdd(); if (!lb.open) lb.showModal(); }
+  const step = d => { const i = current.indexOf(lbK); openLb(current[(i + d + current.length) % current.length]); };
+  document.getElementById('lbPrev').onclick = () => step(-1); document.getElementById('lbNext').onclick = () => step(1);
+  document.getElementById('lbX').onclick = () => lb.close();
+  lb.addEventListener('close', () => { lbK = null; });
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+  lb.addEventListener('keydown', e => { if (e.key === 'ArrowLeft') step(-1); if (e.key === 'ArrowRight') step(1); });
+  lbAdd.onclick = () => toggle(lbK);
+  document.getElementById('lbBook').onclick = () => { toggle(lbK, true); lb.close(); bookSec.scrollIntoView({ behavior: 'smooth' }); };
+  document.getElementById('ownPicLink').onclick = () => { document.getElementById('own').checked = true; };
+
+  // reveal + menu
   const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .06 }) : null;
   document.querySelectorAll('.rv').forEach(el => io ? io.observe(el) : el.classList.add('in'));
-  // menu
   const btn = document.getElementById('menuBtn'), drop = document.getElementById('drop'), scrim = document.getElementById('scrim'), head = document.querySelector('header.top');
   const close = () => { drop.classList.remove('open'); scrim.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); };
   btn.onclick = () => { const o = !drop.classList.contains('open'); drop.style.top = (head.getBoundingClientRect().bottom + 8) + 'px'; drop.classList.toggle('open', o); scrim.classList.toggle('open', o); btn.setAttribute('aria-expanded', o); };
   scrim.onclick = close; drop.querySelectorAll('a').forEach(a => a.onclick = close);
   document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+
   // open now (Boston time)
   const bos = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }));
-  const h = bos.getHours() + bos.getMinutes() / 60, open = h >= 9 && h < 18;
-  document.getElementById('openText').textContent = open ? 'Open now · walk-ins welcome until 6 PM' : 'Closed now · opens 9 AM · walk-ins welcome';
-  const today = document.querySelector(`#hours [data-d="${bos.getDay()}"]`); if (today) today.classList.add('today');
-  // style filters
-  const cards = [...document.querySelectorAll('.style')];
-  document.querySelectorAll('.filters button').forEach(b => b.onclick = () => {
-    document.querySelectorAll('.filters button').forEach(x => x.setAttribute('aria-pressed', x === b));
-    cards.forEach(c => c.hidden = !(b.dataset.f === 'all' || c.dataset.who === b.dataset.f));
-  });
-  // "Book this" pre-fills the form
-  const sel = document.getElementById('styleSel');
-  document.querySelectorAll('[data-style]').forEach(b => b.onclick = () => { sel.value = b.dataset.style; document.getElementById('book').scrollIntoView({ behavior: 'smooth' }); });
-  // booking -> WhatsApp
-  const f = document.getElementById('form');
-  f.date.min = bos.toISOString().slice(0, 10);
+  const h = bos.getHours() + bos.getMinutes() / 60;
+  document.getElementById('openText').textContent = h >= 9 && h < 18 ? 'Open now · walk-ins welcome until 6 PM' : 'Closed now · opens 9 AM · walk-ins welcome';
+  const today = document.querySelector('#hours [data-d="' + bos.getDay() + '"]'); if (today) today.classList.add('today');
+
+  // booking -> WhatsApp (references sent as links to the photos)
+  const f = document.getElementById('form'), err = document.getElementById('err');
+  const pad = n => String(n).padStart(2, '0');
+  f.date.min = bos.getFullYear() + '-' + pad(bos.getMonth() + 1) + '-' + pad(bos.getDate());
   f.addEventListener('submit', e => {
     e.preventDefault();
+    const own = f.own.checked, help = f.help.checked, desc = f.desc.value.trim();
+    const miss = [];
+    if (!picked.length && !own && !help && !desc) miss.push('pick a photo, add your own picture, describe the style, or tick "help me choose"');
+    if (!f.date.value) miss.push('choose a day');
+    if (!f.name.value.trim()) miss.push('add your name');
+    if (miss.length) { err.textContent = 'Please ' + miss.join(', ') + '.'; err.classList.add('show'); return; }
+    err.classList.remove('show');
     const d = new Date(f.date.value + 'T00:00').toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
-    const m = "Hi Ady's! I'd like to book an appointment.\n\nStyle: " + f.style.value + '\nLength: ' + f.len.value + '\nSize: ' + f.size.value + '\nDate: ' + d + '\nTime: ' + f.time.value + '\nName: ' + f.name.value + '\n\nPlease confirm the price and if this time is available. Thank you!';
-    window.open('https://wa.me/' + WA + '?text=' + encodeURIComponent(m), '_blank', 'noopener');
+    const lines = ["Hi Ady's! I'd like to book braids.", '', 'For: ' + f.who.value];
+    if (picked.length) { lines.push('Styles I like from your lookbook:'); picked.forEach((k, i) => lines.push((i + 1) + '. ' + CATS[byK[k]] + ': ' + new URL(full(k), location.href).href)); }
+    if (own) lines.push('I have my own picture, sending it now.');
+    if (help) lines.push("I'm not sure yet, please help me choose.");
+    if (desc) lines.push('Details: ' + desc);
+    lines.push('Length: ' + f.len.value, 'Size: ' + f.size.value, 'Day: ' + d, 'Time: ' + f.time.value, 'Name: ' + f.name.value.trim(), '', 'Please let me know the price and if this time works. Thank you!');
+    window.open('https://wa.me/' + WA + '?text=' + encodeURIComponent(lines.join('\n')), '_blank', 'noopener');
   });
+
+  render(); sync();
 })();
 </script>
 
